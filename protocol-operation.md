@@ -7,16 +7,20 @@ The cask protocol functions by asking consumers to deposit a certain amount of w
 Consumers can withdraw at any time and are never locked. In exchange for depositing funds and maintaining a balance, the consumers will get the following benefits:
 
 Not pay any gas fees for deposits and each recurring subscription payment. Gas fees for each individual payment at subscription renewal time is handled by the protocol.
-Earn yield on the deposited balances.
-Receive CASK token rewards in proportion to their deposit balance.
+
+* Earn yield on the deposited balances.
+* Receive CASK token rewards in proportion to their deposit balance.
 
 On a regular basis, the keepers will service the protocol to trigger any payments on subscriptions that need to be renewed. When a payment is processed, a consumer’s deposit balance is reduced and the associated provider’s balance increases by the same amount, minus [protocol fees](/protocol-fees.md). Providers receive a discount on the fee based on their Fee-Reduction Staked balance. Revenue from the protocol is distributed to the DAO treasury and governance stakers.
 
 Providers can withdraw their balance at any time but until it is withdrawn will have the following benefits:
 
-Earn yield on the held balance.
-Receive CASK token rewards in proportion to their balance.
+* Earn yield on the held balance.
+* Receive CASK token rewards in proportion to their balance.
 
+## Cask Diagram
+
+![Cask Diagram](<.gitbook/assets/cask_diagram.png>)
 
 ## Base Asset
 
