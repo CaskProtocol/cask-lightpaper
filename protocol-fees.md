@@ -54,7 +54,7 @@ Provider has 1,000 monthly subscribers on a plan paying 20 DAI/month and is stak
 
 **Fee Rate** =$$Base Rate Fee Max - (Base Rate Fee Max * Fee Discount Rate)$$= 1.50 %
 
-**Fee Rate** =$$2 % - (2 \% * 25 \%)$$= 1.50 %
+**Fee Rate** =$$2 \% - (2 \% * 25 \%)$$= 1.50 %
 
 
 **Adjusted Fee Rate** = $$max(Base Fee Rate Min, Fee Rate)$$= 1.50 %
