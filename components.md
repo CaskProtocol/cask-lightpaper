@@ -2,7 +2,7 @@
 
 ## Protocol Smart Contract
 
-The cask protocol smart contract manages consumer deposits, provider balances and is the entrypoint for the keepers to upkeep the active recurring subscriptions. The smart contract ensures the payments are processed on the specified interval and for the duration of the minimum subscription period. The provider has no ability to trigger any charges directly and is only entitled to what is agreed upon in the recurring payment agreement. The consumer can cancel the payment agreement at any time. Each payment to the provider is on-chain and is available to be withdrawn instantly and therefore is not at risk of chargebacks. A [protocol fee](protocol-fees.md) is charged by the smart contract to pay for protocol expenses and fund the treasury.
+The cask protocol smart contract manages consumer deposits, provider balances and is the entrypoint for the keepers to upkeep the active recurring subscriptions. The smart contract ensures the payments are processed on the specified interval and for the duration of the minimum subscription period. The provider has no ability to trigger any charges directly and is only entitled to what is agreed upon in the recurring payment agreement. The consumer can cancel the payment agreement at any time. Each payment to the provider is on-chain and is available to be withdrawn instantly and therefore is not at risk of chargebacks. A [protocol fee](/protocol-fees.md) is charged by the smart contract to pay for protocol expenses and fund the treasury.
 
 ## Rewards Contract
 

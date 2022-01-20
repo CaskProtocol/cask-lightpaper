@@ -39,7 +39,7 @@ The protocol uses its treasury, minus the Reserve Assets, to generate yield whic
 
 The cask protocol is by nature a micropayments service and due to the nature of gas fees on Ethereum mainnet, the protocol is only economically viable on layer 2/side chains and other cost-efficient layer 1 EVM compatible chains. The Ethereum mainnet will hold the primary treasury, where the CASK token will be minted and bridges will be used to send CASK tokens to other chains to be used for protocol operation. Each chain will maintain its own treasury to store consumer deposits, held provider funds, and yield income. Proposals to governance will be used to handle occasional rebalancing of CASK tokens across chains.
 
-When providers install the [Subscribe Widget](components.md#subscribe-widget) on their website, they will be able to choose which chains they would like to support. The consumer will need to have deposited funds on one of the configured chains in order to subscribe to the provider’s services.
+When providers install the [Subscribe Widget](/components.md#subscribe-widget) on their website, they will be able to choose which chains they would like to support. The consumer will need to have deposited funds on one of the configured chains in order to subscribe to the provider’s services.
 
 ## Subsidized Gas Fees
 
