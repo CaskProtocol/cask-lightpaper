@@ -6,8 +6,7 @@ The cask protocol functions by asking consumers to deposit a certain amount of w
 
 Consumers can withdraw at any time and are never locked. In exchange for depositing funds and maintaining a balance, the consumers will get the following benefits:
 
-Not pay any gas fees for deposits and each recurring subscription payment. Gas fees for each individual payment at subscription renewal time is handled by the protocol.
-
+* Not pay any gas fees for deposits and each recurring subscription payment. Gas fees for each individual payment at subscription renewal time is handled by the protocol.
 * Earn yield on the deposited balances.
 * Receive CASK token rewards in proportion to their deposit balance.
 
