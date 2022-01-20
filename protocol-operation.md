@@ -10,7 +10,7 @@ Not pay any gas fees for deposits and each recurring subscription payment. Gas f
 Earn yield on the deposited balances.
 Receive CASK token rewards in proportion to their deposit balance.
 
-On a regular basis, the keepers will service the protocol to trigger any payments on subscriptions that need to be renewed. When a payment is processed, a consumer’s deposit balance is reduced and the associated provider’s balance increases by the same amount, minus [protocol fees](protocol-fees.md). Providers receive a discount on the fee based on their Fee-Reduction Staked balance. Revenue from the protocol is distributed to the DAO treasury and governance stakers.
+On a regular basis, the keepers will service the protocol to trigger any payments on subscriptions that need to be renewed. When a payment is processed, a consumer’s deposit balance is reduced and the associated provider’s balance increases by the same amount, minus [protocol fees](/protocol-fees.md). Providers receive a discount on the fee based on their Fee-Reduction Staked balance. Revenue from the protocol is distributed to the DAO treasury and governance stakers.
 
 Providers can withdraw their balance at any time but until it is withdrawn will have the following benefits:
 
