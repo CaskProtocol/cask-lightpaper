@@ -23,7 +23,7 @@ The following are some of the actions that are managed by the governance process
 
 The following are protocol-level parameters that can be adjusted via governance:
 
-* **Base Fees**: Payment fees (both fixed fee and min/max fee percentages) taken from payments to providers based on their fee-reduction staked balance.
+* **Base Fees**: Payment fees (both fixed fee and min/max fee percentages) taken from payments to providers based on their balance in the [Fee Reduction Staking](#token-and-staking) contract.
 * **Stake Target Factor**: Target number of **CASK** tokens a provider should stake in the [Fee Reduction Staking](#token-and-staking) contract per subscriber, per payment if they want to pay the minimum fee on the payment transaction.
 * **Token Emissions**: Amount of **CASK** token reward emissions to liquidity providers and consumers/providers based on their deposit balances.
 * **Yield Performance Fee**: Percentage fee subtracted from yield generation before passing through to consumers/providers.
