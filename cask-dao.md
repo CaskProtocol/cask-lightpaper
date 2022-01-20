@@ -2,7 +2,7 @@
 
 The Cask protocol operates as a DAO and generates fees to pay member rewards as well as fund operations and expansion. The Cask Protocol’s native token is the **CASK** token. This token is used to govern the protocol, offer discounts to providers who stake as well as distribute protocol revenue to governance stakers.
 
-## Governance <a href="#_8kzti3j2oavc" id="_8kzti3j2oavc"></a>
+## Governance
 
 During the initial launch of the protocol, the DAO will be governed by a multi-sig wallet held by the founding team. Governance will be transitioned to governance token stakers over time as governance and decision making directly affects participants of the network.
 
@@ -29,7 +29,7 @@ The following are protocol-level parameters that can be adjusted via governance:
 * **Yield Performance Fee**: APY fee subtracted from yield generation before passing through to consumers and providers used to help pay protocol fees.
 * **Vault Reserve Factor**: The multiple of assets to keep on hand in the protocol to handle anticipated consumer/provider withdrawals, with the remainder of the balance delegated to the yield strategies. If the vault does not have funds in the vault at the time of the withdrawal, a harvest from the yield strategy is performed inside the withdrawal transaction, so participants are never locked out of withdrawing their funds.
 
-## Token and Staking <a href="#_15lyg4j0hkh2" id="_15lyg4j0hkh2"></a>
+## Token and Staking
 
 The **CASK** token is used to govern the protocol, offer discounts to providers, and reward those holding balances in the protocol.
 
@@ -37,9 +37,9 @@ There are two staking options for CASK holders:
 
 **Governance Staking** - CASK holders who stake their CASK into the governance staking contract will be able to propose and vote on DAO proposals and other governance activities as outlined above. These stakers also receive a share of the [Protocol Fees](/protocol-fees.md).
 
-**Fee-Reduction Staking** - Providers who [stake](/protocol-fees.md#fee-reduction-staking-a-href_8kzti3jffff-id_8kzti3jffffa) their CASK tokens are given a discount on protocol fees as detailed in the [Protocol Fees](/protocol-fees.md) section.
+**Fee-Reduction Staking** - Providers who [stake](/protocol-fees.md#fee-reduction-staking) their CASK tokens are given a discount on protocol fees as detailed in the [Protocol Fees](/protocol-fees.md) section.
 
-#### Tokenomics <a href="#_v2yvg4lfypmn" id="_v2yvg4lfypmn"></a>
+## Tokenomics
 
 * Initial Circulating Supply: 130,000,000
 * Total Supply: 1,000,000,000

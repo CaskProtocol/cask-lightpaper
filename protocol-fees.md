@@ -2,7 +2,7 @@
 
 The Cask protocol charges the provider a max fee of up to 2% (set by governance) of each payment to fund the treasury for protocol operations as well as to generate fee distributions to governance stakers. All subscription amounts and protocol fees are calculated using a price denominated in the [Base Asset](/protocol-operation.md#base-asset) of the protocol.
 
-## Fee Reduction Staking <a href="#_8kzti3jffff" id="_8kzti3jffff"></a>
+## Fee Reduction Staking
 
 Protocol fees can be reduced down from the max fee, to a minimum of 1% (set by governance) by staking CASK tokens. The fee is weighted based on the interval of the subscription plan, since more frequent payments require more upkeep by the protocol.
 
