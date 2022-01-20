@@ -6,6 +6,8 @@ The Cask protocol charges the provider a max fee of up to 2% (set by governance)
 
 Protocol fees can be reduced down from the max fee, to a minimum of 1% (set by governance) by staking CASK tokens. The fee is weighted based on the interval of the subscription plan, since more frequent payments require more upkeep by the protocol.
 
+## Fee Formula
+
 Definitions:
 
 **Base Fixed Fee** = Initially set to 0 DAI (set by governance)
@@ -62,3 +64,7 @@ Provider has 1,000 monthly subscribers on a plan paying 20 DAI/month and is stak
 So with the monthly subscription value of 20 DAI and a max base fee of 2%, the applied fee would have been 0.40 DAI for the subscription payment, but with a 25% discount on this fee because the provider is staking 300,000 CASK, they would only pay a fee of 1.50%, or 0.30 DAI per subscription payment.
 
 Providers have 2 ways of reducing their fees: stake more CASK, or offer longer subscription intervals (ex: quarterly instead of monthly).
+
+## Yield Performance Fee
+
+In addition to payment fees, the protocol also takes a percentage of yield generated from the various strategies. Just like payment fees, the yield performance fee is split between the DAO treasury and CASK governance stakers.
