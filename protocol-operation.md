@@ -10,7 +10,7 @@ Consumers can withdraw at any time and are never locked. In exchange for deposit
 * Earn yield on the deposited balances.
 * Receive CASK token rewards in proportion to their deposit balance.
 
-On a regular basis, the [keepers](/components.md#keeper-contracts) will service the protocol to trigger any payments on subscriptions that need to be renewed. When a payment is processed, a consumer’s deposit balance is reduced and the associated provider’s balance increases by the same amount, minus [protocol fees](/protocol-fees.md). Providers receive a discount on the fee based on their Fee-Reduction Staked balance. Revenue from the protocol is distributed to the DAO treasury and governance stakers.
+On a regular basis, the [keepers](/components.md#keeper-contracts) will service the protocol to trigger any payments on subscriptions that need to be renewed. When a payment is processed, a consumer’s deposit balance is reduced and the associated provider’s balance increases by the same amount, minus [protocol fees](/protocol-fees.md). Providers receive a discount on the fee based on their [Fee Reduction Staking](/cask-dao.md#token-and-staking) balance. Revenue from the protocol is distributed to the DAO treasury and governance stakers.
 
 Providers can withdraw their balance at any time but until it is withdrawn will have the following benefits:
 
@@ -25,7 +25,7 @@ Providers can withdraw their balance at any time but until it is withdrawn will 
 
 In the Cask protocol, consumers can deposit any number of whitelisted stablecoins into their “cask”. Due to the slight variations in value of various stablecoins relative to each other, the protocol denominates all balances in the **Base Asset**. The base asset can be changed via governance in case of changes to the stablecoin ecosystem, and could be different on each chain the protocol is deployed, but initially will be the [MakerDAO](https://makerdao.com) **DAI** stablecoin which is widely available on multiple chains and aligns with the decentralized philosophy of the cask protocol. 
 
-At the time of deposit by consumers and a withdrawal by providers, if the deposited coin or withdrawn token is other than the Base Asset, the exchange rate will be applied using Chainlink oracle price feeds. For withdrawals by providers, if the protocol does not have sufficient quantity of the requested token at withdrawal time, the protocol will swap some of its reserve assets to the desired coin at the current market exchange rate to fulfil the withdrawal.
+At the time of deposit by consumers and a withdrawal by providers, if the deposited coin or withdrawn token is other than the [Base Asset](#base-asset), the exchange rate will be applied using Chainlink oracle price feeds. For withdrawals by providers, if the protocol does not have sufficient quantity of the requested token at withdrawal time, the protocol will swap some of its reserve assets to the desired coin at the current market exchange rate to fulfil the withdrawal.
 
 ## Reserve Assets
 

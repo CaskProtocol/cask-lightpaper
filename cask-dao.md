@@ -24,9 +24,10 @@ The following are some of the actions that are managed by the governance process
 The following are protocol-level parameters that can be adjusted via governance:
 
 * **Base Fees**: Payment fees (both fixed fee and min/max fee percentages) taken from payments to providers based on their fee-reduction staked balance.
-* **Stake Target Factor**: Target number of CASK a provider should stake in the fee-reduction staking contract per subscriber, per payment if they want to pay the minimum fee on the payment transaction.
-* **Token Distribution**: Percentage distribution of CASK rewards between liquidity providers, governance stakers and consumer/provider rewards.
-* **Yield Performance Fee**: APY fee subtracted from yield generation before passing through to consumers and providers used to help pay protocol fees.
+* **Stake Target Factor**: Target number of **CASK** tokens a provider should stake in the [Fee Reduction Staking](#token-and-staking) contract per subscriber, per payment if they want to pay the minimum fee on the payment transaction.
+* **Token Emissions**: Amount of **CASK** token reward emissions to liquidity providers and consumers/providers based on their deposit balances.
+* **Yield Performance Fee**: Percentage fee subtracted from yield generation before passing through to consumers/providers.
+* **Protocol Fee Distribution**: Percentage of protocol fee distribution between the protocol treasury and [Governance Stakers](#token-and-staking).
 * **Vault Reserve Factor**: The multiple of assets to keep on hand in the protocol to handle anticipated consumer/provider withdrawals, with the remainder of the balance delegated to the yield strategies. If the vault does not have funds in the vault at the time of the withdrawal, a harvest from the yield strategy is performed inside the withdrawal transaction, so participants are never locked out of withdrawing their funds.
 
 ## Token and Staking
