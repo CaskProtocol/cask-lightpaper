@@ -5,7 +5,7 @@
 * [Components](components.md)
 * [Protocol Fees](protocol-fees.md)
 * [Cask DAO](cask-dao.md)
-* [Staking Rewards](staking-rewards.md)
+* [Emissions and Distributions](emissions-distributions.md)
 * [Features](features.md)
 
 ## Deployed Contracts

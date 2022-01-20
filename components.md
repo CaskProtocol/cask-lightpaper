@@ -2,7 +2,7 @@
 
 ## Protocol Smart Contract
 
-The cask protocol vault smart contract manages a cask wallet for both the consumer and provider. The subscription protocol smart contract ensures the payments are processed on the specified interval and for the duration of the minimum subscription period. The provider has no ability to trigger any charges directly and is only entitled to what is agreed upon in the recurring payment definition held on-chain. The consumer can cancel the payment agreement at any time. Each payment to the provider is on-chain and is available to be withdrawn instantly and is not at risk of chargebacks. A [protocol fee](protocol-fees.md) is charged by the smart contract to pay for protocol expenses and fund the treasury.
+The cask protocol smart contract manages consumer deposits, provider balances and is the entrypoint for the keepers to upkeep the active recurring subscriptions. The smart contract ensures the payments are processed on the specified interval and for the duration of the minimum subscription period. The provider has no ability to trigger any charges directly and is only entitled to what is agreed upon in the recurring payment agreement. The consumer can cancel the payment agreement at any time. Each payment to the provider is on-chain and is available to be withdrawn instantly and therefore is not at risk of chargebacks. A [protocol fee](protocol-fees.md) is charged by the smart contract to pay for protocol expenses and fund the treasury.
 
 ## Rewards Contract
 
@@ -18,14 +18,14 @@ The governance contracts manage token vesting, treasury management (reserve rate
 
 ## Keeper Contracts
 
-Cask uses Chainlink Keepers for protocol upkeep and part of the Cask protocol fees and yield go to pay for this service. The various upkeep needed for the protocol are:&#x20;
+Cask uses [Chainlink Keepers](https://docs.chain.link/docs/chainlink-keepers/introduction/) for protocol upkeep and part of the Cask protocol fees and yield go to pay for this service. The various upkeep needed for the protocol are:
 
 * In order to process future payments within a subscription, without human intervention, the smart contracts must be triggered externally periodically.
-* Manage the yield strategies and claim reserve factor.
+* Manage the yield strategies and vault reserve factor.
 
 ## Dashboard App
 
-The Cask app is a dashboard that is available to both consumers and providers. Consumers can manage/top-up their deposit balance, claim yield and CASK token rewards, see a list of all their past and active subscriptions, payment history, and cancel active subscriptions. Providers can claim subscription funds and CASK rewards, see a list of active subscribers, manage subscription plans and associated settings. The app code is hosted on the IPFS network using an IPNS/ENS name for high availability and censorship resistance.
+The Cask app is a dashboard that is available to both consumers and providers. Consumers can manage/top-up their deposit balance, withdraw funds and CASK token rewards, see a list of all their past and active subscriptions, payment history, and cancel active subscriptions. Providers can withdraw subscription funds and CASK rewards, see a list of active subscribers, manage subscription plans and associated settings. The app code is hosted on the IPFS network using an IPNS/ENS name for high availability and censorship resistance.
 
 ## Subscribe Widget
 

@@ -1,14 +1,18 @@
 # Protocol Fees
 
-The Cask protocol charges the provider a base fee of 1% (set by governance) of each payment in the currency of the payment to fund the treasury for staking rewards, upkeep, and community initiatives. This fee can be reduced by staking CASK tokens. The fee is weighted based on the interval of the subscription plan, since more frequent payments require more upkeep by the protocol.
+The Cask protocol charges the provider a max fee of up to 2% (set by governance) of each payment to fund the treasury for protocol operations as well as to generate fee distributions to governance stakers. All subscription amounts and protocol fees are calculated using a price denominated in the [Base Asset](protocol-operation.md#base-asset) of the protocol.
 
-All subscription amounts and protocol fees are calculated using a price denominated in the Base Asset of the protocol.
+## Fee Reduction Staking <a href="#_8kzti3jffff" id="_8kzti3jffff"></a>
+
+Protocol fees can be reduced down from the max fee, to a minimum of 1% (set by governance) by staking CASK tokens. The fee is weighted based on the interval of the subscription plan, since more frequent payments require more upkeep by the protocol.
 
 Definitions:
 
-**Base Fixed Fee** = Initially set to 0.25 DAI (set by governance)
+**Base Fixed Fee** = Initially set to 0 DAI (set by governance)
 
-**Base Rate Fee** = Initially set to 1% (set by governance)
+**Base Rate Fee Min** = Initially set to 1% (set by governance)
+
+**Base Rate Fee Max** = Initially set to 2% (set by governance)
 
 **Stake Target Factor** = Initially set to 100 (set by governance)
 
@@ -21,23 +25,31 @@ Definitions:
 Fee Rate Formula:
 
 $$
-Fee Rate = Base Fee - (Base Fee * \frac{Total Staked}{Subscriber Count * Stake Target Factor * \frac{365}{Subscription Plan Days}})
+Fee Rate = Base Rate Fee Max - (Base Rate Fee Max * \frac{Total Staked}{Subscriber Count * Stake Target Factor * \frac{365}{Subscription Plan Days}})
 $$
 
 **Example:**
 
-Provider has 1,000 monthly subscribers and is staking 300,000 CASK. The fee discount is calculated as:
+Provider has 1,000 monthly subscribers on a plan paying 20 DAI/month and is staking 300,000 CASK. The fee discount is calculated as:
 
+**Load Factor** = $$365 \over Subscription Plan Days$$= 12
 **Load Factor** = $$365 \over 365 \div 12$$= 12
 
-**No Fee Target** = $$1,000 * Stake Target Factor * Load Factor$$= 1,200,000
+**Min Fee Target** = $$Subscriber Count * Stake Target Factor * Load Factor$$= 1,200,000
+**Min Fee Target** = $$1,000 * 100 * 12$$= 1,200,000
 
-**Fee Discount Rate** = $$300,000 \over No Fee Target$$= 25 %
+**Fee Discount Rate** = $$Total Staked \over Min Fee Target$$= 25 %
+**Fee Discount Rate** = $$300,000 \over 1,200,000$$= 25 %
 
-**Fee Rate** =$$Base Rate Fee - (Base Rate Fee * Fee Discount Rate)$$ = 0.75 %
+**Fee Rate** =$$Base Rate Fee Max - (Base Rate Fee Max * Fee Discount Rate)$$= 1.50 %
+**Fee Rate** =$$2 % - (2 % * 25 %)$$= 1.50 %
 
-**Total Fee** = $$(Fee Rate * Subscription Value) + Base Fixed Fee$$&#x20;
+**Adjusted Fee Rate** = $$max(Base Fee Rate Min, Fee Rate)$$= 1.50 %
+**Adjusted Fee Rate** = $$max(1 %, 1.50 %)$$= 1.50 %
 
-So assuming the monthly subscription value of 20 DAI, the Total Fee would be 0.45 DAI per subscription, but with a 25% discount on the Base Rate Fee, the provider staking 300,000 CASK would only pay a Total Fee of 0.40 DAI for the same subscription payment.
+**Applied Fee** = $$(Adjusted Fee Rate * Subscription Value) + Base Fixed Fee$$= 0.30
+**Applied Fee** = $$(1.50 % * 20 DAI) + 0$$= 0.30
+
+So with the monthly subscription value of 20 DAI and a max base fee of 2%, the applied fee would have been 0.40 DAI for the subscription payment, but with a 25% discount on this fee because the provider is staking 300,000 CASK, they would only pay a fee of 1.50%, or 0.30 DAI per subscription payment.
 
 Providers have 2 ways of reducing their fees: stake more CASK, or offer longer subscription intervals (ex: quarterly instead of monthly).

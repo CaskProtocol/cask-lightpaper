@@ -15,7 +15,7 @@ Billing periods can be any number of the following units:
 
 A set of discount codes can be supplied at subscription plan creation or later. The discount code itself is stored as a hash on-chain such that it is not possible to learn of valid discount codes simply by looking at the smart contract data on-chain. Discounts properties:
 
-* Value can be specified as percentage
+* Percentage amount of the discount
 * Expire the discount after a certain timestamp
 * Specify the max number of uses
 
@@ -29,7 +29,7 @@ With or without prorated prices.
 
 ## Pausing
 
-Subscriptions can be temporarily paused.
+If a provider chooses, they can allow a subscription plan to be pausable by the consumer. While paused, the consumer will incur no charges, and once unpaused, billing will resume as of the unpaused date.
 
 ## Data Collection <a href="#_9bwane50z124" id="_9bwane50z124"></a>
 
@@ -37,4 +37,4 @@ Customer data can be collected via the Subscribe Widget that is needed to provis
 
 ## Refunds <a href="#_xtdm2cbsixxl" id="_xtdm2cbsixxl"></a>
 
-A function on the smart contract will facilitate a refund from the provider to the consumer, using funds from the provider’s unclaimed funds. If the provider does not have enough unclaimed funds for a full refund, they would need to transact the refund outside of the Cask protocol - for example - simply send a payment directly from their wallet to the consumer.
+A function on the smart contract will facilitate a refund from the provider to the consumer, using funds from the provider’s held funds. If the provider does not have enough funds in the protocol for a full refund, they would need to transact the refund outside of the Cask protocol - for example - simply send a payment directly from their wallet to the consumer.
