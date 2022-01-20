@@ -26,8 +26,6 @@ Fee Rate Formula:
 
 $$
 Fee Rate = Base Rate Fee Max -
-$$
-$$
 (Base Rate Fee Max * \frac{Total Staked}{Subscriber Count * Stake Target Factor * \frac{365}{Subscription Plan Days}})
 $$
 
