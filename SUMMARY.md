@@ -4,6 +4,7 @@
 * [Protocol Operation](protocol-operation.md)
 * [Components](components.md)
 * [Protocol Fees](protocol-fees.md)
+* [Tokenomics](tokenomics.md)
 * [Cask DAO](cask-dao.md)
 * [Emissions and Distributions](emissions-distributions.md)
 * [Features](features.md)
