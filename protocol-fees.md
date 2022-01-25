@@ -22,7 +22,7 @@ Definitions:
 
 **Subscriber Count** = Number of active subscribers to the subscription plan
 
-**Subscription Plan Days** = Number of days between the subscription payments. For example, monthly subscriptions would be **** $$365 \over 12$$(or 30.41), weekly subscriptions would be **7**, every two weeks would be **14** and quarterly would be $$365 \over 12 * 3$$(or 91.25).
+**Subscription Plan Days** = Number of days between the subscription payments. For example, monthly subscriptions would be $$365 \over 12$$(or 30.416), weekly subscriptions would be **7**, every two weeks would be **14** and quarterly would be $$365 \over 12 * 3$$(or 91.25).
 
 Fee Rate Formula:
 
