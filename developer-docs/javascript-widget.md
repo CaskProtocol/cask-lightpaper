@@ -73,3 +73,35 @@ Target the `button` "::part" in the styles, such in the example below:
 ```
 
 See more `::part()` documentation at https://developer.mozilla.org/en-US/docs/Web/CSS/::part
+
+
+### Callbacks:
+
+The following callbacks are supported:
+* `onClose` - _No parameters_ :: Called when the widget is closed.
+* `onSuccess` - _(txn)_ :: Called after a successful subscription
+  * `txn` - On-chain transaction ID of the subscription transaction
+  
+```html
+<cask-checkout-button
+  class="cask-checkout-button"
+  provider="0x...."
+  plan="123456"
+  environment="integration"
+  onClose="caskClose"
+  onSuccess="caskSuccess"
+  label="Checkout with Crypto"
+></cask-checkout-button>
+```
+
+```html
+<script type="application/javascript">
+    function caskClose() {
+        console.log("Cask widget closed");
+    }
+    
+    function caskSuccess(txn) {
+        console.log("Cask subscription successful. Transaction: " + txn);
+    }
+</script>
+```
