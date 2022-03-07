@@ -72,7 +72,7 @@ Target the `button` "::part" in the styles, such in the example below:
 ></cask-checkout-button>
 ```
 
-See more `::part()` documentation at https://developer.mozilla.org/en-US/docs/Web/CSS/::part
+See more `::part()` documentation at [https://developer.mozilla.org/en-US/docs/Web/CSS/::part](https://developer.mozilla.org/en-US/docs/Web/CSS/::part)
 
 
 ### Callbacks:
