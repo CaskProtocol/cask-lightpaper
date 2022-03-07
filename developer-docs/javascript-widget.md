@@ -30,7 +30,7 @@ Each location on the page where it is desired to have a checkout button, place t
 ></cask-checkout-button>
 ```
 
-### Attributes:
+### Attributes
 
 | name        | Required |                                                                                Description |
 |-------------|:--------:|-------------------------------------------------------------------------------------------:|
@@ -48,7 +48,7 @@ Each location on the page where it is desired to have a checkout button, place t
 
 
 
-### Styling:
+### Styling
 
 It is possible to override all styles of `cask-checkout-button` by using the [Shadow CSS ::part](https://github.com/fergald/docs/blob/master/explainers/css-shadow-parts-1.md) spec. 
 Target the `button` "::part" in the styles, such in the example below:
@@ -75,7 +75,7 @@ Target the `button` "::part" in the styles, such in the example below:
 See more `::part()` documentation at [https://developer.mozilla.org/en-US/docs/Web/CSS/::part](https://developer.mozilla.org/en-US/docs/Web/CSS/::part)
 
 
-### Callbacks:
+### Callbacks
 
 The following callbacks are supported:
 * `onClose` - _No parameters_ :: Called when the widget is closed.
