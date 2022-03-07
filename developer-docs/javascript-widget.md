@@ -41,7 +41,6 @@ Each location on the page where it is desired to have a checkout button, place t
 | label       |          |                                                                Label to put on the button. |
 | ref         |          |                         Include a custom value associated with the Cask subscription data. |
 | size        |          |         Button size. Possible values:`regular`, `large` or `small`. Defaults to `regular`. |
-| theme       |          |                      Widget theme. Possible values: `dark` or `light`. Defaults to `dark`. |
 | redirect    |          | Redirect to URL upon successful subscribe. Does not call `onSuccess` handler, if supplied. |
 | onClose     |          |                                                            Callback when widget is closed. |
 | onSuccess   |          |                                                    Callback after successful subscription. |
