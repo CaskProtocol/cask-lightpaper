@@ -4,7 +4,7 @@
 ## Event List
 
 
-| event                                       |                                  Description                                   |
+| Event                                       |                                  Description                                   |
 |---------------------------------------------|:------------------------------------------------------------------------------:|
 | [SubscriptionCreated](#subscriptioncreated) |                        A new subscription has been created                     |
 | SubscriptionChangedPlan                     |                   An existing subscription has changed plans                   |
@@ -27,7 +27,7 @@ Addresses such as `consumer` and `provider` are the 42-character hexadecimal for
 
 ### Subscription ID
 
-The `subscriptionId` parameter is a unique 32 byte hexadecimal value representing the subscription instance. It is also
+The `subscriptionId` field is a unique 32 byte hexadecimal value representing the subscription instance. It is also
 the NFT tokenId of the subscription, and in some online tools will be formatted as a uint256 value instead of a hexadecimal
 value.
 
@@ -35,18 +35,21 @@ This ID can be used to fetch the active subscription state from the blockchain d
 
 ### ref
 
-The `ref` value is a 32 byte hexadecimal value that can be provided by the service provider/merchant at subscription
+The `ref` field is a 32 byte hexadecimal value that can be provided by the service provider/merchant at subscription
 creation time via the [Javascript Widget](javascript-widget.md) `ref` parameter. The value must be supplied in hexadecimal format and always
 be a full 32-byte value. There are several utilities provided in the `@caskprotocol/sdk` package to encode/decode strings, 
 numbers and UUIDs into this value. If no value was provided via the widget, the ref value will be the zero value
 `0x0000000000000000000000000000000000000000000000000000000000000000`.
+
+### Plan ID
+
+The `planId` field is the numeric identifier for the plan that is the currently active plan of the subscription.
 
 ### Discount ID
 
 The `discountId` field contains the hash ID of the discount code that is applied to the subscription. This
 value can be used to look up the discount from the provider profile IPFS data which uses the same hash ID. If
 the subscription has no discount, the value is `0x0000000000000000000000000000000000000000000000000000000000000000`.
-
 
 ### Block
 
@@ -55,12 +58,12 @@ The `block` object contains details about the block in which the on-chain event 
 
 ### Transaction Hash
 
-The `transactionHash` value is the on-chain transaction ID which generated the event and can be used to look up the
+The `transactionHash` field is the on-chain transaction ID which generated the event and can be used to look up the
 event on blockchain explorers.
 
 ### Chain ID
 
-The `chainId` value contains the blockchain ID for which blockchain originated the event.
+The `chainId` field contains the blockchain ID for which blockchain originated the event.
 
 
 ## SubscriptionCreated
