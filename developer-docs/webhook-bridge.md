@@ -4,19 +4,19 @@
 ## Event List
 
 
-| event                        |                                  Description                                   |
-|------------------------------|:------------------------------------------------------------------------------:|
-| SubscriptionCreated          |                        A new subscription has been created                     |
-| SubscriptionChangedPlan      |                   An existing subscription has changed plans                   |
-| SubscriptionPendingChangePlan |      An existing subscription has scheduled a plan change at next renewal      |
-| SubscriptionChangedDiscount  |                  An existing subscription applied a discount                   |
-| SubscriptionPaused           |                           A subscription was paused                            |
-| SubscriptionResumed          |                           A subscription was resumed                           |
-| SubscriptionPendingCancel    |         A subscription was scheduled for cancellation at next renewal          |
-| SubscriptionCanceled         |                          A subscription was canceled                           |
-| SubscriptionRenewed          |               A subscription renewal was successfully processed                |
-| SubscriptionTrialEnded       |   A subscription that was in a trial ended the trial and converted to active   |
-| SubscriptionPastDue          | A subscription renewal was attempted but insufficient funds were able to renew |
+| event                                       |                                  Description                                   |
+|---------------------------------------------|:------------------------------------------------------------------------------:|
+| [SubscriptionCreated](#SubscriptionCreated) |                        A new subscription has been created                     |
+| SubscriptionChangedPlan                     |                   An existing subscription has changed plans                   |
+| SubscriptionPendingChangePlan               |      An existing subscription has scheduled a plan change at next renewal      |
+| SubscriptionChangedDiscount                 |                  An existing subscription applied a discount                   |
+| SubscriptionPaused                          |                           A subscription was paused                            |
+| SubscriptionResumed                         |                           A subscription was resumed                           |
+| SubscriptionPendingCancel                   |         A subscription was scheduled for cancellation at next renewal          |
+| SubscriptionCanceled                        |                          A subscription was canceled                           |
+| SubscriptionRenewed                         |               A subscription renewal was successfully processed                |
+| SubscriptionTrialEnded                      |   A subscription that was in a trial ended the trial and converted to active   |
+| SubscriptionPastDue                         | A subscription renewal was attempted but insufficient funds were able to renew |
 
 
 ## Argument Formatting
@@ -38,12 +38,14 @@ This ID can be used to fetch the active subscription state from the blockchain d
 The `ref` value is a 32 byte hexadecimal value that can be provided by the service provider/merchant at subscription
 creation time via the [Javascript Widget](javascript-widget.md) `ref` parameter. The value must be supplied in hexadecimal format and always
 be a full 32-byte value. There are several utilities provided in the `@caskprotocol/sdk` package to encode/decode strings, 
-numbers and UUIDs into this value.
+numbers and UUIDs into this value. If no value was provided via the widget, the ref value will be the zero value
+`0x0000000000000000000000000000000000000000000000000000000000000000`.
 
 ### Discount ID
 
 The `discountId` field contains the hash ID of the discount code that is applied to the subscription. This
-value can be used to look up the discount from the provider profile IPFS data which uses the same hash ID.
+value can be used to look up the discount from the provider profile IPFS data which uses the same hash ID. If
+the subscription has no discount, the value is `0x0000000000000000000000000000000000000000000000000000000000000000`.
 
 
 ### Block
@@ -61,10 +63,7 @@ event on blockchain explorers.
 The `chainId` value contains the blockchain ID for which blockchain originated the event.
 
 
-
-## Event Details
-
-### SubscriptionCreated
+## SubscriptionCreated
 
 The `SubscriptionCreated` event is triggered when a consumer creates a subscription. 
 
