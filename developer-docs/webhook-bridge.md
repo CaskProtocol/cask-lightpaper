@@ -1,7 +1,43 @@
-# Webhook Bridge
+# Web Bridge
+
+The Cask Web Bridge is an application the service provider/merchant can run that will translate on-chain events
+about subscriptions to the provider's services into traditional webhooks as well as provide a REST API to query
+information about the subscriptions.
+
+Webhooks are triggered when on-chain events happen (such as new subscriptions, cancellations, renewals, etc...)
+against the providers address and are delivered  via an HTTP `POST` request with a `json` body describing the event.
+
+The REST API (coming soon) is provided to be able to query information about subscriptions such as the current status, billing, 
+plan and other information.
 
 
-## Event List
+## Setup
+
+The web bridge is available at `<REPO LINK>` and as a docker image, which can be ran using the docker command:
+
+```shell
+docker run --name mybridge -e WEBSOCKET_PROVIDER=... -e WALLET_ADDRESS=0x... -e WEBHOOK_ENDPOINT=https://.... -d cask-web-bridge 
+```
+
+
+## Environment Variables
+
+The following environment variables are used to configure the web bridge. If running the web bridge directly 
+(instead of via docker), you can create a file called `.env` in the root of the project folder containing the 
+environment variables.
+
+| Name               |                                                          Description                                                          |
+|--------------------|:-----------------------------------------------------------------------------------------------------------------------------:|
+| WEBSOCKET_PROVIDER | Websocket URL to a web3 provider, such as infura or alchemy. Use a websocket (ws:// or wss://) URL, and not a json/https URL. |
+| WALLET_ADDRESS     |                        Wallet address of the service provider/merchant, that is associated with Cask.                         |
+| WEBHOOK_ENDPOINT   |                                               URL in which to deliver webhooks.                                               |
+| CASK_ENVIRONMENT   |                     Valid values are `testnet` and `production`, if not specified, assumes `production`.                      |
+| REST_API_PORT      |                         Port to use for REST API. Leave blank (or set to 0) to disable the REST API.                          |
+| VERBOSE            |                              Set to `1` to enable verbose logging for troubleshooting purposes.                               |
+
+
+
+## Webhook Event List
 
 
 | Event                                       |                                  Description                                   |
