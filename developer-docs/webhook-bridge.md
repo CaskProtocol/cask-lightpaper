@@ -35,7 +35,7 @@ environment variables.
 ## Webhook Event List
 
 
-| Event                                                           |                                  Description                                   |
+| Event Name                                                      |                                  Description                                   |
 |-----------------------------------------------------------------|:------------------------------------------------------------------------------:|
 | [SubscriptionCreated](#subscriptioncreated)                     |                        A new subscription has been created                     |
 | [SubscriptionChangedPlan](#subscriptionchangedplan)             |                   An existing subscription has changed plans                   |
@@ -48,6 +48,42 @@ environment variables.
 | [SubscriptionRenewed](#subscriptionrenewed)                     |               A subscription renewal was successfully processed                |
 | [SubscriptionTrialEnded](#subscriptiontrialended)               |   A subscription that was in a trial ended the trial and converted to active   |
 | [SubscriptionPastDue](#subscriptionpastdue)                     | A subscription renewal was attempted but insufficient funds were able to renew |
+
+
+## JSON Format
+
+All event webhooks follow the following format:
+
+```json
+{
+  "event": "<EVENT NAME>",
+  "args": {
+    "<ARG NAME 1>": "<VALUE>",
+    "<ARG NAME 2>": "<VALUE>"
+  },
+  "block": {
+    "number": <BLOCK NUMBER>,
+    "hash": "<BLOCK HASH>",
+    "parentHash": "<PARENT BLOCK HASH>",
+    "timestamp": <TIMESTAMP>,
+    "difficulty": <DIFFICULTY>
+  },
+  "transactionHash": "<TRANSACTION HASH>",
+  "chainId": <CHAIN ID>
+}
+```
+
+| Name              |                                                  Description                                                  |
+|-------------------|:-------------------------------------------------------------------------------------------------------------:|
+| EVENT NAME        |                             The event name as specified in the Event List above.                              |
+| ARG NAME X        |                              Argument name as detailed in the following section.                              |
+| BLOCK NUMBER      |             The block number of the block that included the transaction that generated the event.             |
+| BLOCK HASH        |                    The block hash identifier of the block that contained the transaction.                     |
+| PARENT BLOCK HASH |                             The block hash identifier of the parent of the block.                             |
+| TIMESTAMP         |                     The 32bit unix timestamp of the block that contained the transaction.                     |
+| DIFFICULTY        |                      The difficulty number of the block that contained the transaction.                       |
+| TRANSACTION HASH  | The transaction identifier of the transaction that generated the event. Useful to look up on block explorers. |
+| CHAIN ID          |                                 Which blockchain the transaction occured on.                                  |
 
 
 ## Argument Formatting
@@ -104,7 +140,6 @@ event on blockchain explorers.
 ### Chain ID
 
 The `chainId` field contains the blockchain ID for which blockchain originated the event.
-
 
 ## SubscriptionCreated
 
