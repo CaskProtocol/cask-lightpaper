@@ -6,7 +6,7 @@
 
 | event                                       |                                  Description                                   |
 |---------------------------------------------|:------------------------------------------------------------------------------:|
-| [SubscriptionCreated](#SubscriptionCreated) |                        A new subscription has been created                     |
+| [SubscriptionCreated](#subscriptioncreated) |                        A new subscription has been created                     |
 | SubscriptionChangedPlan                     |                   An existing subscription has changed plans                   |
 | SubscriptionPendingChangePlan               |      An existing subscription has scheduled a plan change at next renewal      |
 | SubscriptionChangedDiscount                 |                  An existing subscription applied a discount                   |
