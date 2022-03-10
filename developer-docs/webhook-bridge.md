@@ -1,28 +1,24 @@
-# Web Bridge
+# Webhook Bridge
 
-The Cask Web Bridge is an application the service provider/merchant can run that will translate on-chain events
-about subscriptions to the provider's services into traditional webhooks as well as provide a REST API to query
-information about the subscriptions.
+The Cask Webhook Bridge is an application the service provider/merchant can run that will translate on-chain events
+about subscriptions to the provider's services into traditional webhooks.
 
 Webhooks are triggered when on-chain events happen (such as new subscriptions, cancellations, renewals, etc...)
 against the providers address and are delivered  via an HTTP `POST` request with a `json` body describing the event.
 
-The REST API (coming soon) is provided to be able to query information about subscriptions such as the current status, billing, 
-plan and other information.
-
 
 ## Setup
 
-The web bridge is available at `<REPO LINK>` and as a docker image, which can be ran using the docker command:
+The webhook bridge is available at `<REPO LINK>` and as a docker image, which can be ran using the docker command:
 
 ```shell
-docker run --name mybridge -e WEBSOCKET_PROVIDER=... -e WALLET_ADDRESS=0x... -e WEBHOOK_ENDPOINT=https://.... -d cask-web-bridge 
+docker run --name mybridge -e WEBSOCKET_PROVIDER=... -e WALLET_ADDRESS=0x... -e WEBHOOK_ENDPOINT=https://.... -d cask-webhook-bridge 
 ```
 
 
 ## Environment Variables
 
-The following environment variables are used to configure the web bridge. If running the web bridge directly 
+The following environment variables are used to configure the webhook bridge. If running the web bridge directly 
 (instead of via docker), you can create a file called `.env` in the root of the project folder containing the 
 environment variables.
 
@@ -32,7 +28,6 @@ environment variables.
 | WALLET_ADDRESS     |                        Wallet address of the service provider/merchant, that is associated with Cask.                         |
 | WEBHOOK_ENDPOINT   |                                               URL in which to deliver webhooks.                                               |
 | CASK_ENVIRONMENT   |                     Valid values are `testnet` and `production`, if not specified, assumes `production`.                      |
-| REST_API_PORT      |                         Port to use for REST API. Leave blank (or set to 0) to disable the REST API.                          |
 | VERBOSE            |                              Set to `1` to enable verbose logging for troubleshooting purposes.                               |
 
 
@@ -40,26 +35,29 @@ environment variables.
 ## Webhook Event List
 
 
-| Event                                       |                                  Description                                   |
-|---------------------------------------------|:------------------------------------------------------------------------------:|
-| [SubscriptionCreated](#subscriptioncreated) |                        A new subscription has been created                     |
-| SubscriptionChangedPlan                     |                   An existing subscription has changed plans                   |
-| SubscriptionPendingChangePlan               |      An existing subscription has scheduled a plan change at next renewal      |
-| SubscriptionChangedDiscount                 |                  An existing subscription applied a discount                   |
-| SubscriptionPaused                          |                           A subscription was paused                            |
-| SubscriptionResumed                         |                           A subscription was resumed                           |
-| SubscriptionPendingCancel                   |         A subscription was scheduled for cancellation at next renewal          |
-| SubscriptionCanceled                        |                          A subscription was canceled                           |
-| SubscriptionRenewed                         |               A subscription renewal was successfully processed                |
-| SubscriptionTrialEnded                      |   A subscription that was in a trial ended the trial and converted to active   |
-| SubscriptionPastDue                         | A subscription renewal was attempted but insufficient funds were able to renew |
+| Event                                                           |                                  Description                                   |
+|-----------------------------------------------------------------|:------------------------------------------------------------------------------:|
+| [SubscriptionCreated](#subscriptioncreated)                     |                        A new subscription has been created                     |
+| [SubscriptionChangedPlan](#subscriptionchangedplan)             |                   An existing subscription has changed plans                   |
+| [SubscriptionPendingChangePlan](#subscriptionpendingchangeplan) |      An existing subscription has scheduled a plan change at next renewal      |
+| [SubscriptionChangedDiscount](#subscriptionchangeddiscount)     |                  An existing subscription applied a discount                   |
+| [SubscriptionPaused](#subscriptionpaused)                       |                           A subscription was paused                            |
+| [SubscriptionResumed](#subscriptionresumed)                     |                           A subscription was resumed                           |
+| [SubscriptionPendingCancel](#subscriptionpendingcancel)         |         A subscription was scheduled for cancellation at next renewal          |
+| [SubscriptionCanceled](#subscriptioncanceled)                   |                          A subscription was canceled                           |
+| [SubscriptionRenewed](#subscriptionrenewed)                     |               A subscription renewal was successfully processed                |
+| [SubscriptionTrialEnded](#subscriptiontrialended)               |   A subscription that was in a trial ended the trial and converted to active   |
+| [SubscriptionPastDue](#subscriptionpastdue)                     | A subscription renewal was attempted but insufficient funds were able to renew |
 
 
 ## Argument Formatting
 
+The following are details about the meaning of each possible argument. Not all arguments are present in every event,
+so look at the event-specific section to see which arguments are included in that event.
+
 ### Addresses
 
-Addresses such as `consumer` and `provider` are the 42-character hexadecimal formatted address.
+Addresses such as `consumer` and `provider` are the 42-character hexadecimal address.
 
 ### Subscription ID
 
@@ -80,6 +78,12 @@ numbers and UUIDs into this value. If no value was provided via the widget, the 
 ### Plan ID
 
 The `planId` field is the numeric identifier for the plan that is the currently active plan of the subscription.
+
+### Previous Plan ID
+
+The `prevPlanId` field denotes the previous plan when the event is indicating a plan change, such as a
+`SubscriptionChangedPlan` which indicates the plan was changed immediately, or a `SubscriptionPendingChangePlan` which
+indicates a change at the next renewal.
 
 ### Discount ID
 
@@ -108,18 +112,145 @@ The `SubscriptionCreated` event is triggered when a consumer creates a subscript
 
 ### Arguments
 
+* consumer
+* provider
+* subscriptionId
+* ref
+* planId
+* discountId
 
-| Name           |                   Description                    |
-|----------------|:------------------------------------------------:|
-| consumer       |               Address of consumer                |
-| provider       |               Address of provider                |
-| subscriptionId |              ID of new subscription              |
-| ref            | Optional custom identifier for this subscription |
-| planId         |           Plan ID of new subscription            |
-| discountId     |              ID of applied discount              |
+## SubscriptionChangedPlan
+
+The `SubscriptionChangedPlan` event is triggered when a consumer creates a subscription.
+
+### Arguments
+
+* consumer
+* provider
+* subscriptionId
+* ref
+* prevPlanId
+* planId
+* discountId
+
+## SubscriptionPendingChangePlan
+
+The `SubscriptionPendingChangePlan` event is triggered when a consumer creates a subscription.
+
+### Arguments
+
+* consumer
+* provider
+* subscriptionId
+* ref
+* prevPlanId
+* planId
+* discountId
+
+## SubscriptionChangedDiscount
+
+The `SubscriptionPendingChangePlan` event is triggered when a consumer creates a subscription.
+
+### Arguments
+
+* consumer
+* provider
+* subscriptionId
+* ref
+* planId
+* discountId
+
+## SubscriptionPaused
+
+The `SubscriptionPaused` event is triggered when a subscription is paused.
+
+### Arguments
+
+* consumer
+* provider
+* subscriptionId
+* ref
+* planId
+
+## SubscriptionResumed
+
+The `SubscriptionResumed` event is triggered when a subscription is resumed.
+
+### Arguments
+
+* consumer
+* provider
+* subscriptionId
+* ref
+* planId
+
+## SubscriptionPendingCancel
+
+The `SubscriptionPendingCancel` event is triggered when a subscription is scheduled to be canceled.
+
+### Arguments
+
+* consumer
+* provider
+* subscriptionId
+* ref
+* planId
+
+## SubscriptionCanceled
+
+The `SubscriptionCanceled` event is triggered when a subscription is canceled. Once a subscription is canceled, it
+can never be restarted.
+
+### Arguments
+
+* consumer
+* provider
+* subscriptionId
+* ref
+* planId
+
+## SubscriptionRenewed
+
+The `SubscriptionRenewed` event is triggered when a subscription is renewed and the normal period payment has 
+successfully processed.
+
+### Arguments
+
+* consumer
+* provider
+* subscriptionId
+* ref
+* planId
+
+## SubscriptionTrialEnded
+
+The `SubscriptionTrialEnded` event is triggered when a subscription trial has ended and the initial period
+charge has been successfully processed.
+
+### Arguments
+
+* consumer
+* provider
+* subscriptionId
+* ref
+* planId
+
+## SubscriptionPastDue
+
+The `SubscriptionPastDue` event is triggered when a subscription charge has failed. Reattempts to process the payment
+will continue throughout the plan's `gracePeriod` setting, at which point, if a successful charge has not been
+possible, the subscription will transition to canceled.
+
+### Arguments
+
+* consumer
+* provider
+* subscriptionId
+* ref
+* planId
 
 
-### Example Webhook Body
+## Example Webhook Body
 
 ```json
 {
