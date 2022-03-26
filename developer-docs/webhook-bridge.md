@@ -12,14 +12,14 @@ against the providers address and are delivered  via an HTTP `POST` request with
 The webhook bridge is available at [https://github.com/CaskProtocol/cask-webhook-bridge](https://github.com/CaskProtocol/cask-webhook-bridge) and as a docker image, which can be ran using the docker command:
 
 ```shell
-docker run --name mybridge -e WEBSOCKET_PROVIDER=... -e WALLET_ADDRESS=0x... -e WEBHOOK_ENDPOINT=https://.... -d caskprotocol/webhook-bridge:latest 
+docker run --name mybridge -e WEBSOCKET_PROVIDER=... -e WALLET_ADDRESS=0x... -e WEBHOOK_ENDPOINT=https://.... -d caskprotocol/webhook-bridge:latest
 ```
 
 
 ## Environment Variables
 
-The following environment variables are used to configure the webhook bridge. If running the web bridge directly 
-(instead of via docker), you can create a file called `.env` in the root of the project folder containing the 
+The following environment variables are used to configure the webhook bridge. If running the webhook bridge directly
+(instead of via docker), you can create a file called `.env` in the root of the project folder containing the
 environment variables.
 
 | Name               |                                                          Description                                                          |
@@ -63,10 +63,7 @@ All event webhooks follow the following format:
   },
   "block": {
     "number": <BLOCK NUMBER>,
-    "hash": "<BLOCK HASH>",
-    "parentHash": "<PARENT BLOCK HASH>",
-    "timestamp": <TIMESTAMP>,
-    "difficulty": <DIFFICULTY>
+    "hash": "<BLOCK HASH>"
   },
   "transactionHash": "<TRANSACTION HASH>",
   "chainId": <CHAIN ID>
@@ -79,11 +76,8 @@ All event webhooks follow the following format:
 | ARG NAME X        |                              Argument name as detailed in the following section.                              |
 | BLOCK NUMBER      |             The block number of the block that included the transaction that generated the event.             |
 | BLOCK HASH        |                    The block hash identifier of the block that contained the transaction.                     |
-| PARENT BLOCK HASH |                             The block hash identifier of the parent of the block.                             |
-| TIMESTAMP         |                     The 32bit unix timestamp of the block that contained the transaction.                     |
-| DIFFICULTY        |                      The difficulty number of the block that contained the transaction.                       |
 | TRANSACTION HASH  | The transaction identifier of the transaction that generated the event. Useful to look up on block explorers. |
-| CHAIN ID          |                                 Which blockchain the transaction occured on.                                  |
+| CHAIN ID          |                                 Which blockchain the transaction occurred on.                                 |
 
 
 ## Argument Formatting
@@ -106,8 +100,8 @@ This ID can be used to fetch the active subscription state from the blockchain d
 ### ref
 
 The `ref` field is a 32 byte hexadecimal value that can be provided by the service provider/merchant at subscription
-creation time via the [Javascript Widget](javascript-widget.md) `ref` parameter. The value must be supplied in hexadecimal format and always
-be a full 32-byte value. There are several utilities provided in the `@caskprotocol/sdk` package to encode/decode strings, 
+creation time via the [Javascript Checkout Widget](https://github.com/CaskProtocol/cask-widgets) `ref` parameter. The value must be supplied in hexadecimal format and always
+be a full 32-byte value. There are several utilities provided in the `@caskprotocol/sdk` package to encode/decode strings,
 numbers and UUIDs into this value. If no value was provided via the widget, the ref value will be the zero value
 `0x0000000000000000000000000000000000000000000000000000000000000000`.
 
@@ -143,7 +137,7 @@ The `chainId` field contains the blockchain ID for which blockchain originated t
 
 ## SubscriptionCreated
 
-The `SubscriptionCreated` event is triggered when a consumer creates a subscription. 
+The `SubscriptionCreated` event is triggered when a consumer creates a subscription.
 
 ### Arguments
 
@@ -246,7 +240,7 @@ can never be restarted.
 
 ## SubscriptionRenewed
 
-The `SubscriptionRenewed` event is triggered when a subscription is renewed and the normal period payment has 
+The `SubscriptionRenewed` event is triggered when a subscription is renewed and the normal period payment has
 successfully processed.
 
 ### Arguments
@@ -300,10 +294,7 @@ possible, the subscription will transition to canceled.
   },
   "block": {
     "number": 169,
-    "hash": "0x824b7d46b4ce79fa8b8dd8ba0520c2c5364439a3f696da7007c0c696fc6d5c11",
-    "parentHash": "0x40152c2bcf0e2fb9c83defc2c99e2fcd131886f4a3bb102d77a5acdc01d0e1bd",
-    "timestamp": 1646685639,
-    "difficulty": 131328
+    "hash": "0x824b7d46b4ce79fa8b8dd8ba0520c2c5364439a3f696da7007c0c696fc6d5c11"
   },
   "transactionHash": "0xf32f03ee2212188ac010a2efe0d3f2226b0a354dfe74f5ccf1584da9ecbffe9d",
   "chainId": 137
