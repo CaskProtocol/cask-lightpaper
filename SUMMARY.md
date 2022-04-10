@@ -19,6 +19,7 @@
 
 * [Javascript Widget](developer-docs/javascript-widget.md)
 * [Webhook Bridge](developer-docs/webhook-bridge.md)
+* [Javascript SDK](developer-docs/javascript-sdk.md)
 
 ## Links
 
