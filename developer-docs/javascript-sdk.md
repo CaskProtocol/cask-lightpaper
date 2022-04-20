@@ -26,38 +26,72 @@ import { CaskSDK } from '@caskprotocol/sdk';
 
 # Usage
 
+## Quick Start
+
+```javascript
+
+import { CaskSDK } from '@caskprotocol/sdk';
+
+// setup cask instance using web3 connections provided by the signer 
+const cask = new CaskSDK({
+    environment: CaskSDK.environments.TESTNET,
+    connections: {
+        signer: web3Provider,
+    },
+    ipfs: {
+        pinataApiKey: process.env.PINATA_API_KEY,
+        pinataApiSecret: process.env.PINATA_API_SECRET,
+    }
+});
+
+// initialize cask connections to the default chain for the testnet
+await cask.init();
+
+// show current balance of spendable USDC in Cask 
+console.log(`Current Cask balance: ${await cask.vault.balance()}`);
+
+// deposit 100 USDC to Cask balance
+await cask.vault.approveAndDeposit({asset: 'USDC', amountSimple: 100});
+
+
+const providerAddress = '0x....';
+const planId = 12345;
+
+const providerProfile = await cask.subscriptionPlans.loadProfile({address: providerAddress});
+const planInfo = providerProfile.getPlan(planId);
+
+console.log(`Subscribing to plan ${planInfo.name}`)
+
+
+// subscribe to the specified service provider's plan 12345
+const resp = await cask.subscriptions.create({provider: providerAddress, planId});
+console.log(`Created subscription ${resp.subscriptionId}`);
+
+cask.stop();
+
+```
+
+
 ## Static Utilities
 
-The `CaskSDK` is both a constructor that creates a stateful instance to the set of Cask functionality as well as
-a namespaced set of utilties and helpers. The namespaces are:
+The `CaskSDK` is both a constructor that creates a stateful instance to the set of Cask functionality as well as a namespaced set of utilities and helpers.
 
-| Name                  |                                              Description                                               |
-|-----------------------|:------------------------------------------------------------------------------------------------------:|
-| CaskSDK.abi           |                                 Access the various Cask contract ABIs                                  |
-| CaskSDK.chains        |                  Information about the various chains supported by the Cask protocol                   |
-| CaskSDK.defaultChains | Contains the map of which chains are supported in the various enviroments (testnet, production, etc..) |
-| CaskSDK.deployments   |         Contains the addresses of the Cask protocol contracts on a given environment and chain         |
-| CaskSDK.environments  |                                       Cask protocol environments                                       |
-| CaskSDK.units         |                    Utilities and constants that represent financial unit formatting                    |
-| CaskSDK.contracts     |              Helpers to ethers.Contract instances of the various Cask protocol contracts               |
-| CaskSDK.enc           |                                            Data encryption                                             |
-| CaskSDK.ipfs          |                                          IPFS reading/writing                                          |
-| CaskSDK.utils         |                                Low level utilties such as data encoding                                |
+The full details of the various helpers and utilities be found in the [SDK reference](https://caskprotocol.github.io/cask-js-sdk/).
+Each namespace below is a link to the reference documentation for that helper/utility.
 
 
-## Services
-
-The instance returned from instantiating an instance of `CaskSDK` has a namedspaced set of services that are accessible from the top
-level instance handle. The configuration passed to the `CaskSDK` constructor is shares across all the possible services. The list
-below assumes you created an instance in the variable `cask`. The services are:
-
-| Name                   |                                                        Description                                                        |
-|------------------------|:-------------------------------------------------------------------------------------------------------------------------:|
-| cask.vault             |                           Interact with the Cask vault such as depositing and withdrawing funds                           |
-| cask.subscriptions     | Interact with the Cask subscriptions service such as creating a new subscription, canceling an existing subscription, etc |
-| cask.subscriptionPlans |           Interact with the Cask subscription plans such as becoming a service provider, setting up plans, etc            |
-| cask.events            |                       A service to register event listeners on the various Cask protocol contracts                        |
-| cask.prices            |                                A service to efficiently get asset prices and user balances                                |
+| Name                                                                                           |                                              Description                                               |
+|------------------------------------------------------------------------------------------------|:------------------------------------------------------------------------------------------------------:|
+| [CaskSDK.abi](https://caskprotocol.github.io/cask-js-sdk/CaskSDK.abi.html)                     |                                 Access the various Cask contract ABIs                                  |
+| [CaskSDK.chains](https://caskprotocol.github.io/cask-js-sdk/CaskSDK.chains.html)               |                  Information about the various chains supported by the Cask protocol                   |
+| [CaskSDK.defaultChains](https://caskprotocol.github.io/cask-js-sdk/CaskSDK.defaultChains.html) | Contains the map of which chains are supported in the various enviroments (testnet, production, etc..) |
+| [CaskSDK.deployments](https://caskprotocol.github.io/cask-js-sdk/CaskSDK.deployments.html)     |         Contains the addresses of the Cask protocol contracts on a given environment and chain         |
+| [CaskSDK.environments](https://caskprotocol.github.io/cask-js-sdk/CaskSDK.environments.html)   |                                       Cask protocol environments                                       |
+| [CaskSDK.units](https://caskprotocol.github.io/cask-js-sdk/CaskSDK.units.html)                 |                    Utilities and constants that represent financial unit formatting                    |
+| [CaskSDK.contracts](https://caskprotocol.github.io/cask-js-sdk/CaskSDK.contracts.html)         |           Helpers to create ethers.Contract instances of the various Cask protocol contracts           |
+| [CaskSDK.enc](https://caskprotocol.github.io/cask-js-sdk/CaskSDK.env.html)                     |                                            Data encryption                                             |
+| [CaskSDK.ipfs](https://caskprotocol.github.io/cask-js-sdk/CaskSDK.ipfs.html)                   |                                          IPFS reading/writing                                          |
+| [CaskSDK.utils](https://caskprotocol.github.io/cask-js-sdk/CaskSDK.utils.html)                 |                         Low level utilities such as data encoding and signing                          |
 
 
 ## Configuration
@@ -83,11 +117,22 @@ The top-level configuration keys are:
 
 Configure which Cask protocol environment in which to interact.
 
-The `environment` can be the value `CaskSDK.environments.TESTNET`, `CaskSDK.environments.PRODUCTION` or `CaskSDK.environments.DEVELOPMENT`.
+The `environment` can be one of:
+* `CaskSDK.environments.TESTNET`
+* `CaskSDK.environments.PRODUCTION`
+* `CaskSDK.environments.DEVELOPMENT`
 
 ### connections
 
-`connections` has 3 sub-objects with keys `rpc`, `signer` and `ws` with the value being a map of Chain ID to provider/signer configurations.
+`connections` has 3 sub-objects with keys `rpc`, `signer` and `ws` with the value being a map of Chain ID to provider/signer configurations:
+
+```javascript
+connections: {
+    rpc: ...,
+    signer: ...,
+    ws:...
+}
+```
 
 The value for an `rpc` configuration can be a string of an http(s) URL or an instance of an ethers `Provider` such as `ethers.providers.JsonRpcProvider`.
 
@@ -103,7 +148,7 @@ Any service method that expects an `address` will use the `signer` instead, if t
 
 **Example:**
 
-```json
+```javascript
 connections: {
   rpc: {
     [CaskSDK.chains.POLYGON_MUMBAI.chainId]: process.env.MUMBAI_PROVIDER_URL,
@@ -128,7 +173,7 @@ Configure where IPFS read and write operations are performed.
 Keys are:
 
 * `ipfsProvider` - Valid values are one from `CaskSDK.ipfs.providers.<PROVIDER>` and defaults to `CaskSDK.ipfs.providers.PINATA`.
-* `ipfsGateway` - URL to IPFS gateway used for read operations.
+* `ipfsGateway` - URL to IPFS gateway used for read operations, with the default being Cask's IPFS gateway.
 
 Any additional configuration items are provider-specific.
 
@@ -197,6 +242,23 @@ And the `unitFormat` is dependent on the format type. For `CaskSDK.units.NUMERAL
 // deposit 25.75 USDC into vault
 cask.vault.deposit({asset: 'USDC', amountSimple: 25.75});
 
-// return balance is NumeralJS string with only one decimal and no abbreviation
-const currentBalance = await cask.vault.balance({unit: CaskSDK.units.NUMERAL, unitFormat: {format: '0.0'}});
+// return balance is NumeralJS string with three decimals and no abbreviation
+const currentBalance = await cask.vault.balance({unit: CaskSDK.units.NUMERAL, unitFormat: {format: '0,0.000'}});
 ```
+
+
+## Services
+
+The instance returned from instantiating an `CaskSDK` object contains all the services needed to interact with the Cask platform.
+
+The full details of the API of each service can be found in the [SDK reference](https://caskprotocol.github.io/cask-js-sdk/).
+Each service below is a link to the reference documentation for that service.
+
+| Name                                                                                    |                                                        Description                                                        |
+|-----------------------------------------------------------------------------------------|:-------------------------------------------------------------------------------------------------------------------------:|
+| [cask.vault](https://caskprotocol.github.io/cask-js-sdk/Vault.html)                     |                           Interact with the Cask vault such as depositing and withdrawing funds                           |
+| [cask.subscriptions](https://caskprotocol.github.io/cask-js-sdk/Subscriptions.html)     | Interact with the Cask subscriptions service such as creating a new subscription, canceling an existing subscription, etc |
+| [cask.subscriptionPlans](https://caskprotocol.github.io/cask-js-sdk/Subscriptions.html) |           Interact with the Cask subscription plans such as becoming a service provider, setting up plans, etc            |
+| [cask.events](https://caskprotocol.github.io/cask-js-sdk/Events.html)                   |                       A service to register event listeners on the various Cask protocol contracts                        |
+| [cask.prices](https://caskprotocol.github.io/cask-js-sdk/Prices.html)                   |                                A service to efficiently get asset prices and user balances                                |
+
