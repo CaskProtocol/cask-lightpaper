@@ -23,7 +23,7 @@ Each location on the page where it is desired to have a checkout button, place t
   class="cask-checkout-button"
   provider="0x...."
   plan="123456"
-  environment="integration"
+  environment="testnet"
   onClose="close"
   onSuccess="success"
   label="Checkout with Crypto"
@@ -36,7 +36,7 @@ Each location on the page where it is desired to have a checkout button, place t
 |-------------|:--------:|-------------------------------------------------------------------------------------------:|
 | provider    |    ✔     |                                                    Wallet address of the service provider. |
 | plan        |    ✔     |                                                   The Cask plan ID in which to subscribe . |
-| environment |          |     Environment. Possible values: `integration` or `production`. Defaults to `production`. |
+| environment |          |         Environment. Possible values: `testnet` or `production`. Defaults to `production`. |
 | class       |          |                                                                      CSS class(es) to add. |
 | label       |          |                                                                Label to put on the button. |
 | ref         |          |                         Include a custom value associated with the Cask subscription data. |

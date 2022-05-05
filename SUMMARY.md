@@ -11,9 +11,9 @@
 
 ## Deployed Contracts
 
-* [Ethereum Mainnet](deployed-contracts/ethereum-mainnet.md)
-* [Polygon](deployed-contracts/polygon.md)
-* [Kovan Testnet](deployed-contracts/kovan-testnet.md)
+* [Token/Treasury](deployed-contracts/ethereum-mainnet.md)
+* [Production](deployed-contracts/production.md)
+* [Testnet](deployed-contracts/testnet.md)
 
 ## Developer Docs
 
