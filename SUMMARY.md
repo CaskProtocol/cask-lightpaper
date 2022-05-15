@@ -14,7 +14,7 @@
 
 * [Production](deployed-contracts/production.md)
 * [Testnet](deployed-contracts/testnet.md)
-* [Token/Treasury](deployed-contracts/ethereum-mainnet.md)
+* [Governance](deployed-contracts/governance.md)
 
 ## Developer Docs
 

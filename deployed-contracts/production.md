@@ -2,11 +2,11 @@
 
 ## Contracts
 
-| contract name         |                                                            Address                                                             |                                                                                                                                         Description |
-|-----------------------|:------------------------------------------------------------------------------------------------------------------------------:|----------------------------------------------------------------------------------------------------------------------------------------------------:|
-| CaskVault             |    [0x3b2b4b547dAEEbf3A703288CB43650f0F287b9ff](https://polygonscan.com/address/0x3b2b4b547dAEEbf3A703288CB43650f0F287b9ff)    |                                                                                              Cask vault to store the various assets in the protocol |
-| CaskSubscriptions     |    [0x4A6f232552E0fd76787006Bb688bFBCB931cc3d0](https://polygonscan.com/address/0x4A6f232552E0fd76787006Bb688bFBCB931cc3d0)    | Cask subscriptions contract for subscription management. Implements ERC-721 for subscriptions to be represented as an optionally transferrable NFT. |
-| CaskSubscriptionPlans |    [0x78B5882b81AF02ebb0803eAFb4A4bf27fe35470e](https://polygonscan.com/address/0x78B5882b81AF02ebb0803eAFb4A4bf27fe35470e)    |                                                                               Cask subscriptions plans contract where the provider profile is held. |
+| contract name         |                                                          Address                                                          |                                                                                                                                         Description |
+|-----------------------|:-------------------------------------------------------------------------------------------------------------------------:|----------------------------------------------------------------------------------------------------------------------------------------------------:|
+| CaskVault             | [0x3b2b4b547dAEEbf3A703288CB43650f0F287b9ff](https://polygonscan.com/address/0x3b2b4b547dAEEbf3A703288CB43650f0F287b9ff)  |                                                                                              Cask vault to store the various assets in the protocol |
+| CaskSubscriptions     | [0x4A6f232552E0fd76787006Bb688bFBCB931cc3d0](https://polygonscan.com/address/0x4A6f232552E0fd76787006Bb688bFBCB931cc3d0)  | Cask subscriptions contract for subscription management. Implements ERC-721 for subscriptions to be represented as an optionally transferrable NFT. |
+| CaskSubscriptionPlans | [0x78B5882b81AF02ebb0803eAFb4A4bf27fe35470e](https://polygonscan.com/address/0x78B5882b81AF02ebb0803eAFb4A4bf27fe35470e)  |                                                                               Cask subscriptions plans contract where the provider profile is held. |
 
 
 ## Supported Stablecoins
