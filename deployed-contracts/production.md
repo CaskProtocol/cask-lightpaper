@@ -19,11 +19,12 @@
 
 ## Protocol Fees
 
-| Fee                     |     Value     |
-|-------------------------|:-------------:|
-| Transaction Fee         |     1.4 %     |
-| Minimum Transaction Fee |   0.05 USDC   |
-| Minimum Payment Value   |   0.50 USDC   |
+| Fee                     |   Value   |
+|-------------------------|:---------:|
+| Base Asset              |  USDC     | 
+| Transaction Fee         |   1.4 %   |
+| Minimum Transaction Fee | 0.05 USDC |
+| Minimum Payment Value   | 0.50 USDC |
 
 # Avalanche
 
