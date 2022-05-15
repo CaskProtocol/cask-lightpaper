@@ -1,6 +1,6 @@
 # DAO
 
-The DAO and CASK token is coordinated from mainnet. The CASK token was minted on Ethereum mainnet, along with the 
+The DAO and CASK token is coordinated from Ethereum mainnet. Ethereum mainnet is where CASK token was minted, along with the 
 root treasury. Tokens are bridged to other networks to support staking rewards and to ensure liquidity.
 
 ## Mainnet Contracts
