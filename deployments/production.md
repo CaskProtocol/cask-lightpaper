@@ -17,11 +17,11 @@
 | USDT |    [0xc2132d05d31c914a87c6611c10748aeb04b58e8f](https://polygonscan.com/token/0xc2132d05d31c914a87c6611c10748aeb04b58e8f)    |
 | DAI  |    [0x8f3cf7ad23cd3cadbd9735aff958023239c6a063](https://polygonscan.com/token/0x8f3cf7ad23cd3cadbd9735aff958023239c6a063)    |
 
-## Polygon Protocol Fees
+## Polygon Protocol Settings and Fees
 
-For details on each fee, see [Protocol Fees](/protocol-fees.md)
+For details on each fee, see [Protocol Fees](/protocol-fees.md).
 
-| Fee                      |   Value   |
+| Name                     |   Value   |
 |--------------------------|:---------:|
 | Base Asset               |   USDC    | 
 | Minimum Payment Value    | 0.50 USDC |
