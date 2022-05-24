@@ -10,11 +10,11 @@
 * [Features](features.md)
 * [Roadmap](roadmap.md)
 
-## Deployed Contracts
+## Protocol Deployments
 
-* [Production](deployed-contracts/production.md)
-* [Testnet](deployed-contracts/testnet.md)
-* [Governance](deployed-contracts/governance.md)
+* [Production](deployments/production.md)
+* [Testnet](deployments/testnet.md)
+* [Governance](deployments/governance.md)
 
 ## Developer Docs
 

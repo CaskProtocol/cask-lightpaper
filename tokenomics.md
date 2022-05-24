@@ -1,14 +1,18 @@
 # Tokenomics
 
-## Token and Staking
+## Token and Staking (coming soon)
 
-The **CASK** token is used to govern the protocol, offer discounts to providers, and reward those holding balances in the protocol.
+The **CASK** token is used to govern the protocol, offer discounts to providers, and reward those holding balances in
+the protocol.
 
 There are two staking options for CASK holders:
 
-**Governance Staking** - CASK holders who stake their CASK into the governance staking contract will be able to propose and vote on DAO proposals and other governance activities as outlined above. These stakers also receive a share of the [Protocol Fees](/protocol-fees.md).
+**Governance Staking** - CASK holders who stake their CASK into the governance staking contract will be able to propose
+and vote on DAO proposals and other governance activities as outlined above. These stakers also receive a share of
+the [Protocol Fees](/protocol-fees.md).
 
-**Fee-Reduction Staking** - Providers who [stake](/protocol-fees.md#fee-reduction-staking) their CASK tokens are given a discount on protocol fees as detailed in the [Protocol Fees](/protocol-fees.md) section.
+**Fee-Reduction Staking** - Providers who [stake](/protocol-fees.md#fee-reduction-staking) their CASK tokens are given a
+discount on protocol fees as detailed in the [Protocol Fees](/protocol-fees.md) section.
 
 ## Supply
 
