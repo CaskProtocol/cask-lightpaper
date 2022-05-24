@@ -21,7 +21,7 @@ Definitions:
 **Transaction Fee Rate Min** = Lowest possible fee rate charged by the protocol assuming the provider is staking the
 optimal amount of CASK tokens.
 
-**Transaction Fee Rate Max** = The fee rate charged by the protocol is no CASK tokens are staked.
+**Transaction Fee Rate Max** = The fee rate charged by the protocol if no CASK tokens are staked by the service provider.
 
 **Minimum Transaction Fee** = The lowest possible fee charged by the protocol regardless of the fee rates or staking, so
 ensure the protocol earns enough to cover gas costs. Denominated in the Base Asset.
