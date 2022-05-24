@@ -47,8 +47,10 @@ $$
 
 **Example:**
 
-Provider has 1,000 monthly subscribers on a plan paying 20 USDC/month and is staking 300,000 CASK. The fee discount is
-calculated as:
+Provider has 1,000 monthly subscribers on a plan paying 20 USDC/month and is staking 300,000 CASK. The chain has a
+**Transaction Fee Rate Min** fee of 1%, and a **Transaction Fee Rate Max** fee of 2%.
+
+The fee discount is calculated as:
 
 **Load Factor** = $$365 \over Subscription Plan Days$$= 12
 
@@ -76,9 +78,9 @@ calculated as:
 
 As long as the **Applied Fee** is at least the **Minimum Transaction Fee**, no additional fee is added.
 
-So with the monthly subscription value of 20 USDC and a **Transaction Fee Rate Max** fee of 2%, the applied fee would have been 0.40 USDC
-for the subscription payment, but with a 25% discount on this fee because the provider is staking 300,000 CASK, they
-would only pay a fee of 1.50%, or 0.30 USDC per subscription payment.
+So with the monthly subscription value of 20 USDC, the applied fee would have been 0.40 USDC for the subscription 
+payment, but with a 25% discount on this fee because the provider is staking 300,000 CASK, they would only pay a fee
+of 1.50%, or 0.30 USDC per subscription payment.
 
 Providers have 2 ways of reducing their fees: stake more CASK, or offer longer subscription intervals (ex: quarterly
 instead of monthly).
