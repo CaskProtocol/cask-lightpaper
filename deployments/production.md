@@ -19,13 +19,17 @@
 
 ## Polygon Protocol Fees
 
-| Fee                     |   Value   |
-|-------------------------|:---------:|
-| Base Asset              |  USDC     | 
-| Transaction Fee         |   1.4 %   |
-| Transaction Fee         |   1.4 %   |
-| Minimum Transaction Fee | 0.05 USDC |
-| Minimum Payment Value   | 0.50 USDC |
+For details on each fee, see [Protocol Fees](/protocol-fees.md)
+
+| Fee                      |   Value   |
+|--------------------------|:---------:|
+| Base Asset               |   USDC    | 
+| Minimum Payment Value    | 0.50 USDC |
+| Transaction Fee Rate Min |    N/A    |
+| Transaction Fee Rate Max |   1.4 %   |
+| Minimum Transaction Fee  | 0.05 USDC |
+| Stake Target Factor      |    N/A    |
+
 
 # Avalanche
 
