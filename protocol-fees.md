@@ -6,6 +6,8 @@ required to operate on the blockchain and is set by the Cask DAO governance proc
 using a price denominated in the [Base Asset](/protocol-operation.md#base-asset) of the 
 protocol.
 
+The current production fees are always available on the [Production Deployments](/deployments/production.md) page.
+
 ## Fee Reduction Staking
 
 Protocol fees can be reduced by staking CASK tokens. The fee is weighted based on the interval of the subscription plan, 
