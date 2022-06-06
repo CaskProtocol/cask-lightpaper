@@ -1,3 +1,12 @@
+# Faucet
+
+You can obtain testnet tokens in order to test your integration with Cask. The faucet is available from both the web and discord.
+
+Online: [https://faucet.cask.fi](https://faucet.cask.fi)
+
+Discord: Via the #testnet-faucet channel on the [Cask Discord Server](https://www.cask.fi/discord)
+
+
 # Mumbai (Polygon)
 
 
@@ -10,4 +19,10 @@
 
 # Fuji (Avalanche)
 
-Coming soon...
+
+| contract name         |                                                             Address                                                              |                                                                                                                                         Description |
+|-----------------------|:--------------------------------------------------------------------------------------------------------------------------------:|----------------------------------------------------------------------------------------------------------------------------------------------------:|
+| CaskVault             | [0x9d628d298D917BF9642Bb45D594B2075f661373D](https://testnet.snowtrace.io/address/0x9d628d298D917BF9642Bb45D594B2075f661373D)  |                                                                                              Cask vault to store the various assets in the protocol |
+| CaskSubscriptions     | [0x28E372eff469b18Bc86Fb9f0C496b219bde39E81](https://testnet.snowtrace.io/address/0x28E372eff469b18Bc86Fb9f0C496b219bde39E81)  | Cask subscriptions contract for subscription management. Implements ERC-721 for subscriptions to be represented as an optionally transferrable NFT. |
+| CaskSubscriptionPlans | [0x06bd2FD3784E1cEe11969caA67CDb0803DcF5869](https://testnet.snowtrace.io/address/0x06bd2FD3784E1cEe11969caA67CDb0803DcF5869)  |                                                                               Cask subscriptions plans contract where the provider profile is held. |
+
