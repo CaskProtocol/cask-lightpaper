@@ -3,8 +3,8 @@
 The DAO and CASK token is coordinated from Ethereum mainnet. Ethereum mainnet is where CASK token was minted, along with the 
 root community treasury. Tokens are bridged to other networks to support staking rewards and to ensure liquidity.
 
-All Cask protocol contracts are `owned` by the `TimelockController` with a 48-hour delay time. This allows any changes
-to protocol settings to be guaranteed to be available prior to taking effect.
+All Cask protocol contracts are `owned` by the `TimelockController` with a 48-hour delay time before changes can be applied.
+This ensures all protocol setting changes are public knowledge prior to taking effect.
 
 ## Mainnet Contracts
 
