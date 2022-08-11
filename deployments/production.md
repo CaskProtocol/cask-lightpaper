@@ -42,6 +42,7 @@ For details on each fee, see [Protocol Fees](/protocol-fees.md).
 | Stake Target Factor      |    N/A    |
 
 
+# Avalanche
 
 ## Avalanche Contracts
 
@@ -77,6 +78,8 @@ For details on each fee, see [Protocol Fees](/protocol-fees.md).
 | Stake Target Factor      |     N/A     |
 
 
+# Fantom
+
 ## Fantom Contracts
 
 | contract name             |                                                        Address                                                        |
@@ -106,6 +109,8 @@ For details on each fee, see [Protocol Fees](/protocol-fees.md).
 | Minimum Transaction Fee  | 0.10 USDC |
 | Stake Target Factor      |    N/A    |
 
+
+# Aurora
 
 ## Aurora Contracts
 
