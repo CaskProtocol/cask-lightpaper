@@ -1,7 +1,7 @@
 # Cask DAO
 
 The Cask protocol operates as a DAO and generates fees to pay member rewards as well as fund operations and expansion.
-The Cask Protocol’s native token is the **CASK** token. This token is used to govern the protocol, offer discounts to
+The Cask Protocol’s native token will be the **CASK** token. This token will be used to govern the protocol, offer discounts to
 providers who stake as well as distribute protocol revenue to governance stakers.
 
 ## Governance

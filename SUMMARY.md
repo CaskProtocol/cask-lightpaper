@@ -1,14 +1,12 @@
 # Table of contents
 
 * [Introduction](README.md)
-* [Protocol Operation](protocol-operation.md)
-* [Components](components.md)
-* [Protocol Fees](protocol-fees.md)
-* [Tokenomics](tokenomics.md)
-* [Cask DAO](cask-dao.md)
-* [Emissions and Distributions](emissions-distributions.md)
-* [Features](features.md)
-* [Roadmap](roadmap.md)
+
+## Flows
+
+* [Subscriptions](flows/subscriptions.md)
+* [Auto Buy](flows/autobuy.md)
+* [Peer to Peer](flows/peer-to-peer.md)
 
 ## Protocol Deployments
 
@@ -22,7 +20,13 @@
 * [Webhook Bridge](developer-docs/webhook-bridge.md)
 * [Javascript SDK](developer-docs/javascript-sdk.md)
 
-## Links
+## Cask DAO
+
+* [DAO Overview](cask-dao.md)
+* [Tokenomics](tokenomics.md)
+* [Emissions and Distributions](emissions-distributions.md)
+
+## Additional Resources
 
 * [Cask Website](https://cask.fi)
 * [Blog](https://blog.cask.fi)
