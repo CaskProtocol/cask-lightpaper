@@ -5,7 +5,7 @@ implements a job scheduling and queuing system that can handle many types of aut
 is built using [Chainlink Keepers](https://docs.chain.link/docs/chainlink-keepers/introduction/) with flow-specific
 contracts operating above.
 
-Examples of flow types are subscription payments, automated investing,
+Examples of flow types are subscription payments, [automated investing](/flow-types/autobuy.md),
 recurring peer-to-peer payments with many more flow types not only possible but under
 active development. Each flow type generally consists of a protocol contract that the user interacts with directly,
 and a manager contract in which the keepers call to handle the recurring transaction processing. More complex flows
@@ -22,5 +22,5 @@ When funds are put into the Cask Wallet, they generate yield via yield strategie
 is for funds to be sent to a yield aggregator such as [Yearn Finance](https://yearn.finance/) or
 [Beefy Finance](https://beefy.finance/). Additional yield strategies will be developed over time.
 
-Allll operational decisions such as which chains, what stablecoins to support, and yield strategy allocation are governed
+All operational decisions such as which chains, what stablecoins to support, and yield strategy allocation are governed
 by the [Cask DAO](cask-dao.md).
