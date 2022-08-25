@@ -3,7 +3,7 @@
 The Cask protocol charges the provider a fee on each payment to fund the treasury for protocol operations as well as to
 generate fee distributions to governance stakers. The fee charged is set per blockchain based primarily on the gas fees
 required to operate on the blockchain and is set by the Cask DAO governance process. and protocol fees are calculated
-using a price denominated in the [Base Asset](/protocol-operation.md#base-asset) of the protocol.
+using a price denominated in the Base Asset of the protocol.
 
 The current production fees are always available on the [Production Deployments](/deployments/production.md) page.
 
