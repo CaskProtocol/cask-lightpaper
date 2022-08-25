@@ -10,10 +10,6 @@
 * [Features](features.md)
 * [Roadmap](roadmap.md)
 
-## Flows
-
-* [Auto Buy](flow-types/autobuy.md)
-
 ## Protocol Deployments
 
 * [Production](deployments/production.md)
