@@ -1,6 +1,6 @@
 # Introduction
 
-![Cask Welcome](.gitbook/assets/cask_title.png)
+![](.gitbook/assets/cask_title.png)
 
 Cask is a decentralized non-custodial protocol for automating the flow of money in web3. The Cask base layer
 implements a job scheduling and queuing system that can handle many types of automated money flows. The foundation
