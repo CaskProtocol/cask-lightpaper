@@ -1,18 +1,21 @@
 # Protocol Fees
 
-The Cask protocol charges the provider a fee on each payment to fund the treasury for protocol operations as well as to
+The Cask protocol charges a fee to process a flow payment. These fees are used to fund the treasury for protocol operations as well as to
 generate fee distributions to governance stakers. The fee charged is set per blockchain based primarily on the gas fees
-required to operate on the blockchain and is set by the Cask DAO governance process. and protocol fees are calculated
-using a price denominated in the Base Asset of the protocol.
+required to operate on the blockchain and is set by the Cask DAO governance process. Protocol fees on each chain are calculated
+using a price denominated in the Base Asset on that chain.
 
 The current production fees are always available on the [Production Deployments](/deployments/production.md) page.
 
 ## Fee Reduction Staking
 
-Protocol fees can be reduced by staking CASK tokens. The fee is weighted based on the interval of the subscription plan,
-since more frequent payments require more upkeep by the protocol.
+Protocol fees will be able to be reduced by staking CASK tokens. Each flow has a separate formula:
 
-## Fee Formula
+## Subscription Fee Formula
+
+The subscription payment fee is weighted based on the interval of the subscription plan since more frequent 
+payments require more upkeep by the protocol.
+
 
 Definitions:
 
@@ -84,6 +87,14 @@ of 1.50%, or 0.30 USDC per subscription payment.
 
 Providers have 2 ways of reducing their fees: stake more CASK, or offer longer subscription intervals (ex: quarterly
 instead of monthly).
+
+## Auto Buy Fee Formula
+
+Coming soon...
+
+## Peer to Peer Payment Fee Formula
+
+Coming soon...
 
 ## Yield Performance Fee
 
