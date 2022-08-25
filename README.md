@@ -24,5 +24,5 @@ When funds are put into the Cask Wallet, they generate yield via yield strategie
 is for funds to be sent to a yield aggregator such as [Yearn Finance](https://yearn.finance/) or 
 [Beefy Finance](https://beefy.finance/). Additional yield strategies will be developed over time.
 
-All operational decisions such as which chains, what stablecoins to support, yield strategy allocation are governed
+All operational decisions such as which chains, what stablecoins to support, and yield strategy allocation are governed
 by the [Cask DAO](cask-dao.md).
