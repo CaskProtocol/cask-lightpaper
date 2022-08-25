@@ -6,7 +6,7 @@ is built using [Chainlink Keepers](https://docs.chain.link/docs/chainlink-keeper
 contracts operating above.
 
 Examples of flow types are [subscription payments](/flow-types/subscriptions.md), [automated investing](/flow-types/autobuy.md),
-recurring [peer-to-peer payments](/flow-types/peer-to-peer.md) with many more flow types not only possible but under
+recurring peer-to-peer payments with many more flow types not only possible but under
 active development. Each flow type generally consists of a protocol contract that the user interacts with directly,
 and a manager contract in which the keepers call to handle the recurring transaction processing. More complex flows
 could have several contracts to implement more complex capabilities.

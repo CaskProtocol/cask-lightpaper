@@ -1,3 +1,0 @@
-# Peer to Peer
-
-Coming soon...

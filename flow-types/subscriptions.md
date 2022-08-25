@@ -10,28 +10,3 @@ Service providers configure one or more plans with a specific interval, price, o
 of other settings. It is also possible to create several types of discounts. Traditional discount codes are supported in
 addition to web3-native discounts that can be offered to consumers holding a specific balance of an ERC20 token or an NFT
 from a specific collection.
-
-There are a number of supporting components that work with the subscription flow:
-
-## Subscribe Widget
-
-The subscribe widget is a javascript widget that can add to the service provider or community website/web app that easily offers a
-“Subscribe with Crypto” button that handles all the web3 wallet interactions with the consumer. It handles the spending
-approval and establishment of the subscription - the provider does not need any knowledge of web3 programming nor
-interact with any on-chain smart contracts if they so choose. The widget is customizable via html5 attributes with
-default subscription settings established when defining the subscription plan (payment interval, cost per interval,
-currency, etc…). The subscription widget code is hosted on the IPFS network using an IPNS/ENS name for high availability
-and censorship resistance.
-
-When providers install the widget, they will be able to
-choose which chains they would like to support. The consumer will need to have deposited funds on one of the configured
-chains in order to subscribe to the provider’s services.
-
-## Webhook Bridge
-
-The webhook bridge is an optional component the provider can choose to run to make it easy to integrate the Cask
-protocol into their existing application, especially if it is desired to not have to learn and integrate web3 technology
-into their stack. The webhook bridge listens for smart contract events such as new subscriptions,
-successful/unsuccessful payments on a subscription or subscription cancellations and translates these into JSON webhook
-events that can be sent to their existing infrastructure. A docker image will be provided to ease the operational
-knowledge required to run the webhook bridge.
