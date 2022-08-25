@@ -10,6 +10,12 @@
 * [Features](features.md)
 * [Roadmap](roadmap.md)
 
+## Flows
+
+* [Subscriptions](flows/subscriptions.md)
+* [Auto Buy](flows/autobuy.md)
+* [Peer to Peer](flows/peer-to-peer.md)
+
 ## Protocol Deployments
 
 * [Production](deployments/production.md)
