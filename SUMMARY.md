@@ -12,9 +12,7 @@
 
 ## Flows
 
-* [Subscriptions](flows/subscriptions.md)
-* [Auto Buy](flows/autobuy.md)
-* [Peer to Peer](flows/peer-to-peer.md)
+* [Auto Buy](flow-types/autobuy.md)
 
 ## Protocol Deployments
 

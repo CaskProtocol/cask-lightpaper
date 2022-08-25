@@ -1,3 +1,0 @@
-# Peer to Peer Transfers
-
-Coming soon...
