@@ -1,4 +1,4 @@
-                                             # NFT Subscriptions
+# NFT Subscriptions
 
 The NFT subscription flow implements a recurring payment agreement between a consumer and a service provider. The service
 provider can be a traditional web2/SaaS type business or could also be any creator, community, impact DAO or project
