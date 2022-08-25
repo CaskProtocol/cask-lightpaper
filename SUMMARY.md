@@ -1,14 +1,6 @@
 # Table of contents
 
 * [Introduction](README.md)
-* [Protocol Operation](protocol-operation.md)
-* [Components](components.md)
-* [Protocol Fees](protocol-fees.md)
-* [Tokenomics](tokenomics.md)
-* [Cask DAO](cask-dao.md)
-* [Emissions and Distributions](emissions-distributions.md)
-* [Features](features.md)
-* [Roadmap](roadmap.md)
 
 ## Flows
 
@@ -27,6 +19,12 @@
 * [Javascript Widget](developer-docs/javascript-widget.md)
 * [Webhook Bridge](developer-docs/webhook-bridge.md)
 * [Javascript SDK](developer-docs/javascript-sdk.md)
+
+## Cask DAO
+
+* [DAO Overview](cask-dao.md)
+* [Tokenomics](tokenomics.md)
+* [Emissions and Distributions](emissions-distributions.md)
 
 ## Links
 
