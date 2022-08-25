@@ -1,6 +1,6 @@
 # Introduction
 
-![Cask Title](<.gitbook/assets/cask-recurring-money-flow.png>)
+![Cask Title](<.gitbook/assets/cask_title.png>)
 
 Cask is a decentralized non-custodial protocol for automating the flow of money in web3. The Cask base layer
 implements a job scheduling and queuing system that can handle many types of automated money flows. The foundation
@@ -22,7 +22,7 @@ stablecoins. The list of supported stablecoins is chain-dependent and the list c
 
 When funds are put into the Cask Wallet, they generate yield via yield strategies. The most basic yield strategy
 is for funds to be sent to a yield aggregator such as [Yearn Finance](https://yearn.finance/) or 
-[Beefy Finance](https://beefy.finance/). Additional yield strategies may be developed over time.
+[Beefy Finance](https://beefy.finance/). Additional yield strategies will be developed over time.
 
 All operational decisions such as which chains, what stablecoins to support, yield strategy allocation are governed
 by the [Cask DAO](cask-dao.md).
