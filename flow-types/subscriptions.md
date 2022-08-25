@@ -33,5 +33,5 @@ The webhook bridge is an optional component the provider can choose to run to ma
 protocol into their existing application, especially if it is desired to not have to learn and integrate web3 technology
 into their stack. The webhook bridge listens for smart contract events such as new subscriptions,
 successful/unsuccessful payments on a subscription or subscription cancellations and translates these into JSON webhook
-events that can be sent to their existing infrastructure. A docker image will be provided to ease the operational
+events that can be sent to their existing infrastructure. A docker image is also availble to ease the operational
 knowledge required to run the webhook bridge.
