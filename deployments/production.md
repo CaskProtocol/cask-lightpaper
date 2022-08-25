@@ -147,16 +147,6 @@ For details on each fee, see [Protocol Fees](/protocol-fees.md).
 
 For details on each fee, see [Protocol Fees](/protocol-fees.md).
 
-| Name                     |   Value   |
-|--------------------------|:---------:|
-| Base Asset               |   USDC    | 
-| Minimum Payment Value    | 0.50 USDC |
-| Transaction Fee Rate Min |    N/A    |
-| Transaction Fee Rate Max |   1.4 %   |
-| Minimum Transaction Fee  | 0.10 USDC |
-| Stake Target Factor      |    N/A    |
-
-
 ### NFT Subscriptions
 
 | Name                     |   Value   |
