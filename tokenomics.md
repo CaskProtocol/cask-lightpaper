@@ -11,7 +11,7 @@ There are two staking options for CASK holders:
 and vote on DAO proposals and other governance activities as outlined above.
 
 **Fee-Reduction Staking** - Some flows offer fee reduction to those who [stake](/protocol-fees.md#fee-reduction-staking) their CASK tokens.
-One example is service providers using the [subscriptions](flows/subscriptions.md) are given a discount on the payment fee.
+One example is service providers using the [subscriptions](/flows/subscriptions.md) are given a discount on the payment fee.
 
 ## Supply
 
