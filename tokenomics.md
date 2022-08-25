@@ -2,7 +2,7 @@
 
 ## Token and Staking (coming soon)
 
-The **CASK** token will is used to govern the protocol, offer discounts on certain flow types, and reward those holding balances in
+The **CASK** token will be used to govern the protocol, offer discounts on certain flow types, and reward those holding balances in
 the protocol.
 
 There are two staking options for CASK holders:
