@@ -25,6 +25,7 @@
 * [DAO Overview](cask-dao.md)
 * [Tokenomics](tokenomics.md)
 * [Emissions and Distributions](emissions-distributions.md)
+* [Protocol Fees](protocol-fees.md)
 
 ## Links
 
