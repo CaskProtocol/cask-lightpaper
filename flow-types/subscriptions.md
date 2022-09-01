@@ -11,6 +11,15 @@ of other settings. It is also possible to create several types of discounts. Tra
 addition to web3-native discounts that can be offered to consumers holding a specific balance of an ERC20 token or an NFT
 from a specific collection.
 
+The NFT subscription flow supports the following features:
+* Customizable billing period (days, weeks, months, years)
+* Free trial with configurable length up to 30 days
+* Discounts, both traditional coupon codes and [web3 discounts](https://blog.cask.fi/introducing-automated-discount-triggers-based-on-on-chain-data-for-web3-e4b98c941f07)
+* Secure data collection (metadata only readable by provider and current subscription holder) via SDK (soon via widget)
+* Optional pausability to allow consumer to temporarily suspend their service
+* Optional transferability to allow consumer to transfer/sell their subscription via NFT marketplaces
+* Optionally set a limit on max number of active users per plan
+
 There are a number of supporting components that work with the subscription flow:
 
 ## Subscribe Widget
