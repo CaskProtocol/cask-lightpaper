@@ -72,6 +72,7 @@ checkout widget to support multiple chains, the provider must have deployed the 
 chain in which they support. Once that is done, the widget needs to be told which chains to support via the `chains`
 attribute. The value is a comma separate list of the following chains:
 
+Production Environment:
 * polygon
 * avalanche
 * fantom
@@ -79,6 +80,11 @@ attribute. The value is a comma separate list of the following chains:
 * aurora
 * moonbeam
 * gnosis
+
+Testnet Environment:
+* mumbai
+* fuji
+* celo_alfajores
 
 
 ### Styling:
@@ -88,14 +94,14 @@ attribute. The value is a comma separate list of the following chains:
 
 ```html
 <style>
-  .cask-checkout-button::part(button) {
-    background-color: aqua;
-    width: 100%; /* Those styles apply to button in shadow root */
-  }
+    .cask-checkout-button::part(button) {
+        background-color: aqua;
+        width: 100%; /* Those styles apply to button in shadow root */
+    }
 </style>
 <cask-checkout-button
-  class="cask-checkout-button"
-  label="Pay with Crypto"
+        class="cask-checkout-button"
+        label="Pay with Crypto"
 />
 ```
 
