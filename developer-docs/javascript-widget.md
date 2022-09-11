@@ -1,4 +1,4 @@
-# Javascript Widget
+# Overview
 
 The repo contains the Cask Protocol buttons/widgets that can be integrated into your website. This includes a
 checkout button that can be used to provide simple signup experience as well as a top-up button that can be added
