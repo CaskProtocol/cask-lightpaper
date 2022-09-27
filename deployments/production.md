@@ -1,11 +1,15 @@
 # Contract Description
 
-| contract name           |                                                                     Description                                                                     |
-|-------------------------|:---------------------------------------------------------------------------------------------------------------------------------------------------:|
-| CaskVault               |                                               Cask vault to store the various assets in the protocol                                                |
-| CaskSubscriptions       | Cask subscriptions contract for subscription management. Implements ERC-721 for subscriptions to be represented as an optionally transferrable NFT. |
-| CaskSubscriptionPlans   |                                        Cask subscriptions plans contract where the provider profile is held.                                        |
-| CaskSubscriptionManager |                                   Processes subscription renewals and holds the subscription protocol parameters.                                   |
+| contract name           |                                                                       Description                                                                        |
+|-------------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------:|
+| CaskVault               |                                                  Cask vault to store the various assets in the protocol                                                  |
+| CaskSubscriptions       |      Cask subscriptions contract for subscription flows. Implements ERC-721 for subscriptions to be represented as an optionally transferrable NFT.      |
+| CaskSubscriptionPlans   |                                          Cask subscriptions plans contract where the provider profile is held.                                           |
+| CaskSubscriptionManager |                                     Processes subscription renewals and holds the subscription protocol parameters.                                      |
+| CaskDCA                 |                                    Cask auto-buy (DCA) contract for creating and interacting with the auto-buy flows.                                    |
+| CaskDCAManager          |                                   Processes auto-buy (DCA) renewals and holds the auto-buy (DCA) protocol parameters.                                    |
+| CaskP2P                 |                                Cask Peer-to-Peer (P2P) contract for creating and interacting with the Peer-to-Peer flows.                                |
+| CaskP2PManager          |                               Processes Peer-to-Peer (P2P) renewals and holds the Peer-to-Peer (P2P) protocol parameters.                                |
 
 
 # Polygon
