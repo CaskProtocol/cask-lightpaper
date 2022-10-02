@@ -49,3 +49,19 @@ This ensures all protocol setting changes are public knowledge prior to taking e
 | DAO Multisig       | [0xFeAc0a0D83577A29D74d6294A2CeD14e84eee0eC](https://aurorascan.dev/address/0xFeAc0a0D83577A29D74d6294A2CeD14e84eee0eC) |
 | Community Treasury | [0xCcB3e06C2794FB45f21F5F57631faB16Fa6152De](https://aurorascan.dev/address/0xCcB3e06C2794FB45f21F5F57631faB16Fa6152De) | 
 | TimelockController | [0x733Ec5A72c38f2f3c75E98b28DffC1885aB04AF1](https://aurorascan.dev/address/0x733Ec5A72c38f2f3c75E98b28DffC1885aB04AF1) |
+
+## Celo Governance
+
+| Name               |                                                        Address                                                        |
+|--------------------|:---------------------------------------------------------------------------------------------------------------------:|
+| DAO Multisig       | [0xB538e8DcD297450BdeF46222f3CeB33bB1e921b3](https://celoscan.io/address/0xB538e8DcD297450BdeF46222f3CeB33bB1e921b3)  |
+| Community Treasury | [0x96d59127cCD1c0e3749E733Ee04F0DfbD2f808c8](https://celoscan.io/address/0x96d59127cCD1c0e3749E733Ee04F0DfbD2f808c8) | 
+| TimelockController | [0x28418B0AB2C00142a865971dcC6a4b1154DaD19E](https://celoscan.io/address/0x28418B0AB2C00142a865971dcC6a4b1154DaD19E) |
+
+## Arbitrum Governance
+
+| Name               |                                                        Address                                                        |
+|--------------------|:---------------------------------------------------------------------------------------------------------------------:|
+| DAO Multisig       | [0xdd5873a087e0c15EE0F017FEf3335eb1E59f9fA0](https://arbiscan.io/address/0xdd5873a087e0c15EE0F017FEf3335eb1E59f9fA0)  |
+| Community Treasury | [0xe5Cf58A0BB78dc62F034164dDDAbe32D26c0c766](https://arbiscan.io/address/0xe5Cf58A0BB78dc62F034164dDDAbe32D26c0c766) | 
+| TimelockController | [0x93580e1c76bD5e3355C32d77d0053B22Ac3c3721](https://arbiscan.io/address/0x93580e1c76bD5e3355C32d77d0053B22Ac3c3721) |

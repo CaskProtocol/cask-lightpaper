@@ -428,3 +428,61 @@ For details on each fee, see [Protocol Fees](/protocol-fees.md).
 | Minimum Period          |   1 Day   |
 
 
+# Arbitrum
+
+## Arbitrum Contracts
+
+| contract name           |                                                         Address                                                         |
+|-------------------------|:-----------------------------------------------------------------------------------------------------------------------:|
+| CaskVault               | [0x20151fF7fDd720b85063D02081aa5B7876aDff7B](https://arbiscan.io/address/0x20151fF7fDd720b85063D02081aa5B7876aDff7B) |
+| CaskSubscriptions       | [0xF76BF31f0b56BD6f72E1aFeB83a51F191ec2291B](https://arbiscan.io/address/0xF76BF31f0b56BD6f72E1aFeB83a51F191ec2291B) |
+| CaskSubscriptionPlans   | [0xfA07af9E5835D720b3798a37f716749252F94D71](https://arbiscan.io/address/0xfA07af9E5835D720b3798a37f716749252F94D71) |
+| CaskSubscriptionManager | [0x7DaF9a1744Df00d0473A9A920B6A4Ea33B665360](https://arbiscan.io/address/0x7DaF9a1744Df00d0473A9A920B6A4Ea33B665360) |
+| CaskDCA                 | [0xf89418E3A57189692ADe9A25792fD986fb99C5Ca](https://arbiscan.io/address/0xf89418E3A57189692ADe9A25792fD986fb99C5Ca) |
+| CaskDCAManager          | [0x4C17e4F40262108F06375d727f1353e1D592B1Bf](https://arbiscan.io/address/0x4C17e4F40262108F06375d727f1353e1D592B1Bf) |
+| CaskP2P                 | [0x775Df9836945B0E95eD5F6A3269Bf22F6b426e85](https://arbiscan.io/address/0x775Df9836945B0E95eD5F6A3269Bf22F6b426e85) |
+| CaskP2PManager          | [0x1A4620123cfD10c73D9Cdd65879c1Fb6312ef654](https://arbiscan.io/address/0x1A4620123cfD10c73D9Cdd65879c1Fb6312ef654) |
+
+## Arbitrum Supported Stablecoins
+
+| Coin  |                                                      Address                                                       |
+|-------|:------------------------------------------------------------------------------------------------------------------:|
+| *USDC | [0xFF970A61A04b1cA14834A43f5dE4533eBDDB5CC8](https://arbiscan.io/token/0xFF970A61A04b1cA14834A43f5dE4533eBDDB5CC8) |
+| USDT  | [0xFd086bC7CD5C481DCC9C85ebE478A1C0b69FCbb9](https://arbiscan.io/token/0xFd086bC7CD5C481DCC9C85ebE478A1C0b69FCbb9) |
+| DAI   | [0xDA10009cBd5D07dd0CeCc66161FC93D7c9000da1](https://arbiscan.io/token/0xDA10009cBd5D07dd0CeCc66161FC93D7c9000da1) |
+
+*= Base Asset
+
+## Arbitrum Protocol Settings and Fees
+
+For details on each fee, see [Protocol Fees](/protocol-fees.md).
+
+### NFT Subscriptions
+
+| Name                     |   Value   |
+|--------------------------|:---------:|
+| Minimum Payment Value    | 1.00 USDC |
+| Transaction Fee Rate Min |    N/A    |
+| Transaction Fee Rate Max |   1.4 %   |
+| Minimum Transaction Fee  | 0.50 USDC |
+| Stake Target Factor      |    N/A    |
+
+
+### Auto Buys (DCA)
+
+| Name                    |   Value    |
+|-------------------------|:----------:|
+| Minimum Buy Amount      | 20.00 USDC |
+| Transaction Fee         |   0.6 %    |
+| Minimum Transaction Fee | 1.00 USDC  |
+| Minimum Period          |   1 Day    |
+| Minimum Slippage        |   0.5 %    |
+| Stake Target Factor     |    N/A     |
+
+
+### Peer-to-Peer (P2P)
+
+| Name                    |   Value   |
+|-------------------------|:---------:|
+| Transaction Fee         | 0.25 USDC |
+| Minimum Period          |   1 Day   |
