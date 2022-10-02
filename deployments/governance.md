@@ -57,6 +57,14 @@ This ensures all protocol setting changes are public knowledge prior to taking e
 | Community Treasury | [0xCcB3e06C2794FB45f21F5F57631faB16Fa6152De](https://aurorascan.dev/address/0xCcB3e06C2794FB45f21F5F57631faB16Fa6152De) | 
 | TimelockController | [0x733Ec5A72c38f2f3c75E98b28DffC1885aB04AF1](https://aurorascan.dev/address/0x733Ec5A72c38f2f3c75E98b28DffC1885aB04AF1) |
 
+## Gnosis Governance
+
+| Name               |                                                         Address                                                         |
+|--------------------|:-----------------------------------------------------------------------------------------------------------------------:|
+| DAO Multisig       |  [0xEF9c41A52920343c75c74b2A45b73DB1FB67b2f2](https://gnosisscan.io/address/0xEF9c41A52920343c75c74b2A45b73DB1FB67b2f2)   |
+| Community Treasury | [0xCcB3e06C2794FB45f21F5F57631faB16Fa6152De](https://gnosisscan.io/address/0xCcB3e06C2794FB45f21F5F57631faB16Fa6152De) | 
+| TimelockController | [0x733Ec5A72c38f2f3c75E98b28DffC1885aB04AF1](https://gnosisscan.io/address/0x733Ec5A72c38f2f3c75E98b28DffC1885aB04AF1) |
+
 ## Celo Governance
 
 | Name               |                                                        Address                                                        |
