@@ -41,6 +41,13 @@ This ensures all protocol setting changes are public knowledge prior to taking e
 | Community Treasury |  [0x96d59127cCD1c0e3749E733Ee04F0DfbD2f808c8](https://ftmscan.com/address/0x96d59127cCD1c0e3749E733Ee04F0DfbD2f808c8)   | 
 | TimelockController |  [0x28418B0AB2C00142a865971dcC6a4b1154DaD19E](https://ftmscan.com/address/0x28418B0AB2C00142a865971dcC6a4b1154DaD19E)   |
 
+## Moonbeam Governance
+
+| Name               |                                                         Address                                                         |
+|--------------------|:-----------------------------------------------------------------------------------------------------------------------:|
+| DAO Multisig       |  [0x57D9355C31b2685F6693A88B9b206E2d274C4b03](https://moonscan.io/address/0x57D9355C31b2685F6693A88B9b206E2d274C4b03)   |
+| Community Treasury | [0xCcB3e06C2794FB45f21F5F57631faB16Fa6152De](https://moonscan.io/address/0xCcB3e06C2794FB45f21F5F57631faB16Fa6152De) | 
+| TimelockController | [0x733Ec5A72c38f2f3c75E98b28DffC1885aB04AF1](https://moonscan.io/address/0x733Ec5A72c38f2f3c75E98b28DffC1885aB04AF1) |
 
 ## Aurora Governance
 
