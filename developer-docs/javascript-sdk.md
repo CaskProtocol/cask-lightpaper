@@ -258,11 +258,14 @@ The instance returned from instantiating an `CaskSDK` object contains all the se
 The full details of the API of each service can be found in the [SDK reference](https://caskprotocol.github.io/cask-js-sdk/).
 Each service below is a link to the reference documentation for that service.
 
-| Name                                                                                    |                                                        Description                                                        |
-|-----------------------------------------------------------------------------------------|:-------------------------------------------------------------------------------------------------------------------------:|
-| [cask.vault](https://caskprotocol.github.io/cask-js-sdk/Vault.html)                     |                           Interact with the Cask vault such as depositing and withdrawing funds                           |
-| [cask.subscriptions](https://caskprotocol.github.io/cask-js-sdk/Subscriptions.html)     | Interact with the Cask subscriptions service such as creating a new subscription, canceling an existing subscription, etc |
-| [cask.subscriptionPlans](https://caskprotocol.github.io/cask-js-sdk/Subscriptions.html) |           Interact with the Cask subscription plans such as becoming a service provider, setting up plans, etc            |
-| [cask.events](https://caskprotocol.github.io/cask-js-sdk/Events.html)                   |                       A service to register event listeners on the various Cask protocol contracts                        |
-| [cask.prices](https://caskprotocol.github.io/cask-js-sdk/Prices.html)                   |                                A service to efficiently get asset prices and user balances                                |
+| Name                                                                                    |                                                                Description                                                                 |
+|-----------------------------------------------------------------------------------------|:------------------------------------------------------------------------------------------------------------------------------------------:|
+| [cask.vault](https://caskprotocol.github.io/cask-js-sdk/Vault.html)                     |                                   Interact with the Cask vault such as depositing and withdrawing funds                                    |
+| [cask.subscriptions](https://caskprotocol.github.io/cask-js-sdk/Subscriptions.html)     |         Interact with the Cask subscriptions service such as creating a new subscription, canceling an existing subscription, etc          |
+| [cask.subscriptionPlans](https://caskprotocol.github.io/cask-js-sdk/Subscriptions.html) |                    Interact with the Cask subscription plans such as becoming a service provider, setting up plans, etc                    |
+| [cask.dca](https://caskprotocol.github.io/cask-js-sdk/DCA.html)                         |             Interact with the Cask auto-buy (DCA) service such as creating a new auto-buy, canceling an existing auto-buy, etc             |
+| [cask.p2p](https://caskprotocol.github.io/cask-js-sdk/P2P.html)                         | Interact with the Cask peer-to-peer (P2P) service such as creating a new recurring transfer, canceling an existing recurring transfer, etc |
+| [cask.query](https://caskprotocol.github.io/cask-js-sdk/Query.html)                     |                      Interact with the Cask query service to retrieve information about flows from the Cask subgraphs                      |
+| [cask.events](https://caskprotocol.github.io/cask-js-sdk/Events.html)                   |                                A service to register event listeners on the various Cask protocol contracts                                |
+| [cask.prices](https://caskprotocol.github.io/cask-js-sdk/Prices.html)                   |                                        A service to efficiently get asset prices and user balances                                         |
 
