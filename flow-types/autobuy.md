@@ -1,5 +1,7 @@
 # Auto Buy
 
+Also known as **DCA** or Dollar Cost Averaging.
+
 Automatically buy a specific amount of value (denominated in USDC) of a number of given assets on a regular basis. Auto-buys are completely
 decentralized and assets are acquired via decentralized exchanges (dexes). Purchased assets are sent directly
 to your personal wallet (even if using the cask wallet to fund the buys). Cask uses [Chainlink Oracles](https://data.chain.link/) 
