@@ -8,6 +8,11 @@
 * [Auto Buy](flow-types/autobuy.md)
 * [Peer to Peer](flow-types/peer-to-peer.md)
 
+## Integrations
+
+* [LIT Protocol](integrations/LIT-protocol.md)
+* [Charmverse](integrations/charmverse.md)
+
 ## Protocol Deployments
 
 * [Production](deployments/production.md)
