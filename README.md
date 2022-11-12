@@ -20,7 +20,7 @@ with the security of not asking for an unlimited approval. Currently, the Cask p
 stablecoins. The list of supported stablecoins is chain-dependent and the list can be found on the
 [production deployment](/deployments/production.md) page.
 
-When funds are put into the Cask Wallet, they generate yield via yield strategies. The most basic yield strategy
+(coming soon) When funds are put into the Cask Wallet, they generate yield via yield strategies. The most basic yield strategy
 is for funds to be sent to a yield aggregator such as [Yearn Finance](https://yearn.finance/) or
 [Beefy Finance](https://beefy.finance/). Additional yield strategies will be developed over time.
 

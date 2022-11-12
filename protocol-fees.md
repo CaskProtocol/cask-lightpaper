@@ -90,11 +90,15 @@ instead of monthly).
 
 ## Auto Buy Fee Formula
 
-Coming soon...
+Auto-buys are charged a percentage of the USDC value of the swap. This is in addition to any fee charged by the 
+DEX performing the swap. There is a minimum fee charged for each buy if the percentage fee is below the minimum. For
+details of the fee on each chain, see the [Production](deployments/production.md) page.
 
 ## Peer to Peer Payment Fee Formula
 
-Coming soon...
+Peer to peer transfers are charged a fixed fee at the time of the tranfer, regardless of the amount of the transfer.
+For details of the fee on each chain, see the [Production](deployments/production.md) page.
+
 
 ## Yield Performance Fee
 
