@@ -15,4 +15,4 @@ Auto-buys have the following features:
 * Choose the USDC amount and interval for automatic purchases
 * Choose the max slippage allowed from the current Chainlink reported asset price
 * Optionally set a maximum amount of value to invest over the lifetime of the auto-buy
-* Optionally set a min and/or max price you are willing to pay for the asset - purchases are skipped if the asset price is outside the configured range
+* Optionally set a min and/or max price you are willing to pay for the asset - purchases are skipped for the internal if the asset price is outside the configured range
