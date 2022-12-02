@@ -80,3 +80,19 @@ This ensures all protocol setting changes are public knowledge prior to taking e
 | DAO Multisig       | [0xdd5873a087e0c15EE0F017FEf3335eb1E59f9fA0](https://arbiscan.io/address/0xdd5873a087e0c15EE0F017FEf3335eb1E59f9fA0)  |
 | Community Treasury | [0xe5Cf58A0BB78dc62F034164dDDAbe32D26c0c766](https://arbiscan.io/address/0xe5Cf58A0BB78dc62F034164dDDAbe32D26c0c766) | 
 | TimelockController | [0x93580e1c76bD5e3355C32d77d0053B22Ac3c3721](https://arbiscan.io/address/0x93580e1c76bD5e3355C32d77d0053B22Ac3c3721) |
+
+## Optimism Governance
+
+| Name               |                                                        Address                                                        |
+|--------------------|:---------------------------------------------------------------------------------------------------------------------:|
+| DAO Multisig       | [0x145bEA5B40c181Ed8BaE1064c4eCE394aCCD5589](https://optimistic.etherscan.io/address/0x145bEA5B40c181Ed8BaE1064c4eCE394aCCD5589)  |
+| Community Treasury | [0xCcB3e06C2794FB45f21F5F57631faB16Fa6152De](https://optimistic.etherscan.io/address/0xCcB3e06C2794FB45f21F5F57631faB16Fa6152De) | 
+| TimelockController | [0x733Ec5A72c38f2f3c75E98b28DffC1885aB04AF1](https://optimistic.etherscan.io/address/0x733Ec5A72c38f2f3c75E98b28DffC1885aB04AF1) |
+
+## BNB Chain Governance
+
+| Name               |                                                       Address                                                        |
+|--------------------|:--------------------------------------------------------------------------------------------------------------------:|
+| DAO Multisig       | [0xCeaB160B6E33a7d546eBF8737C952fFB27FfD0D1](https://bscscan.com/address/0xCeaB160B6E33a7d546eBF8737C952fFB27FfD0D1) |
+| Community Treasury | [0xCcB3e06C2794FB45f21F5F57631faB16Fa6152De](https://bscscan.com/address/0xCcB3e06C2794FB45f21F5F57631faB16Fa6152De) | 
+| TimelockController | [0x93580e1c76bD5e3355C32d77d0053B22Ac3c3721](https://bscscan.com/address/0x93580e1c76bD5e3355C32d77d0053B22Ac3c3721) |

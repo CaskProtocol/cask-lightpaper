@@ -486,3 +486,122 @@ For details on each fee, see [Protocol Fees](/protocol-fees.md).
 |-------------------------|:---------:|
 | Transaction Fee         | 0.25 USDC |
 | Minimum Period          |   1 Day   |
+
+# Optimism
+
+## Optimism Contracts
+
+| contract name           |                                                             Address                                                              |
+|-------------------------|:--------------------------------------------------------------------------------------------------------------------------------:|
+| CaskVault               | [0x3b2b4b547dAEEbf3A703288CB43650f0F287b9ff](https://optimistic.etherscan.io/address/0x3b2b4b547dAEEbf3A703288CB43650f0F287b9ff) |
+| CaskSubscriptions       | [0xD054F8866fc45c4387d56D2340dCA08d83E14A5e](https://optimistic.etherscan.io/address/0xD054F8866fc45c4387d56D2340dCA08d83E14A5e) |
+| CaskSubscriptionPlans   | [0xD252A4C836C75063867f0193325b328CCe6B7306](https://optimistic.etherscan.io/address/0xD252A4C836C75063867f0193325b328CCe6B7306) |
+| CaskSubscriptionManager | [0x331979A83644574E56035E4b43d3ca68Ce793918](https://optimistic.etherscan.io/address/0x331979A83644574E56035E4b43d3ca68Ce793918) |
+| CaskDCA                 | [0x96d59127cCD1c0e3749E733Ee04F0DfbD2f808c8](https://optimistic.etherscan.io/address/0x96d59127cCD1c0e3749E733Ee04F0DfbD2f808c8) |
+| CaskDCAManager          | [0x83aA6a992Ff3ef3766679Cc90E8C60a04afcC171](https://optimistic.etherscan.io/address/0x83aA6a992Ff3ef3766679Cc90E8C60a04afcC171) |
+| CaskP2P                 | [0xccB54bF4171bc8C11e78ca40f3a3bd3B721EF361](https://optimistic.etherscan.io/address/0xccB54bF4171bc8C11e78ca40f3a3bd3B721EF361) |
+| CaskP2PManager          | [0xb8A52a086262E1d6c7494bDCb824f884f41FC5f8](https://optimistic.etherscan.io/address/0xb8A52a086262E1d6c7494bDCb824f884f41FC5f8) |
+
+## Optimism Supported Stablecoins
+
+| Coin  |                                                      Address                                                       |
+|-------|:------------------------------------------------------------------------------------------------------------------:|
+| *USDC | [0x7F5c764cBc14f9669B88837ca1490cCa17c31607](https://optimistic.etherscan.io/token/0x7F5c764cBc14f9669B88837ca1490cCa17c31607) |
+| USDT  | [0x94b008aA00579c1307B0EF2c499aD98a8ce58e58](https://optimistic.etherscan.io/token/0x94b008aA00579c1307B0EF2c499aD98a8ce58e58) |
+| DAI   | [0xDA10009cBd5D07dd0CeCc66161FC93D7c9000da1](https://optimistic.etherscan.io/token/0xDA10009cBd5D07dd0CeCc66161FC93D7c9000da1) |
+
+*= Base Asset
+
+## Optimism Protocol Settings and Fees
+
+For details on each fee, see [Protocol Fees](/protocol-fees.md).
+
+### NFT Subscriptions
+
+| Name                     |   Value   |
+|--------------------------|:---------:|
+| Minimum Payment Value    | 1.00 USDC |
+| Transaction Fee Rate Min |    N/A    |
+| Transaction Fee Rate Max |   1.4 %   |
+| Minimum Transaction Fee  | 0.50 USDC |
+| Stake Target Factor      |    N/A    |
+
+
+### Auto Buys (DCA)
+
+| Name                    |   Value    |
+|-------------------------|:----------:|
+| Minimum Buy Amount      | 20.00 USDC |
+| Transaction Fee         |   0.6 %    |
+| Minimum Transaction Fee | 1.00 USDC  |
+| Minimum Period          |   1 Day    |
+| Minimum Slippage        |   0.5 %    |
+| Stake Target Factor     |    N/A     |
+
+
+### Peer-to-Peer (P2P)
+
+| Name                    |   Value   |
+|-------------------------|:---------:|
+| Transaction Fee         | 0.25 USDC |
+| Minimum Period          |   1 Day   |
+
+
+# BNB Chain
+
+## BNB Chain Contracts
+
+| contract name           |                                                       Address                                                        |
+|-------------------------|:--------------------------------------------------------------------------------------------------------------------:|
+| CaskVault               | [0x3b2b4b547dAEEbf3A703288CB43650f0F287b9ff](https://bscscan.com/address/0x3b2b4b547dAEEbf3A703288CB43650f0F287b9ff) |
+| CaskSubscriptions       | [0xD054F8866fc45c4387d56D2340dCA08d83E14A5e](https://bscscan.com/address/0xD054F8866fc45c4387d56D2340dCA08d83E14A5e)  |
+| CaskSubscriptionPlans   | [0xD252A4C836C75063867f0193325b328CCe6B7306](https://bscscan.com/address/0xD252A4C836C75063867f0193325b328CCe6B7306)  |
+| CaskSubscriptionManager | [0x331979A83644574E56035E4b43d3ca68Ce793918](https://bscscan.com/address/0x331979A83644574E56035E4b43d3ca68Ce793918)  |
+| CaskDCA                 | [0x96d59127cCD1c0e3749E733Ee04F0DfbD2f808c8](https://bscscan.com/address/0x96d59127cCD1c0e3749E733Ee04F0DfbD2f808c8)  |
+| CaskDCAManager          | [0x83aA6a992Ff3ef3766679Cc90E8C60a04afcC171](https://bscscan.com/address/0x83aA6a992Ff3ef3766679Cc90E8C60a04afcC171)  |
+| CaskP2P                 | [0x775Df9836945B0E95eD5F6A3269Bf22F6b426e85](https://bscscan.com/address/0x775Df9836945B0E95eD5F6A3269Bf22F6b426e85)  |
+| CaskP2PManager          | [0x1A4620123cfD10c73D9Cdd65879c1Fb6312ef654](https://bscscan.com/address/0x1A4620123cfD10c73D9Cdd65879c1Fb6312ef654)  |
+
+## BNB Chain Supported Stablecoins
+
+| Coin  |                                                      Address                                                       |
+|-------|:------------------------------------------------------------------------------------------------------------------:|
+| *USDC | [0x8AC76a51cc950d9822D68b83fE1Ad97B32Cd580d](https://bscscan.com/token/0x8AC76a51cc950d9822D68b83fE1Ad97B32Cd580d) |
+| USDT  | [0x55d398326f99059fF775485246999027B3197955](https://bscscan.com/token/0x55d398326f99059fF775485246999027B3197955) |
+| BUSD  | [0xe9e7CEA3DedcA5984780Bafc599bD69ADd087D56](https://bscscan.com/token/0xe9e7CEA3DedcA5984780Bafc599bD69ADd087D56) |
+
+*= Base Asset
+
+## BNB Chain Protocol Settings and Fees
+
+For details on each fee, see [Protocol Fees](/protocol-fees.md).
+
+### NFT Subscriptions
+
+| Name                     |   Value    |
+|--------------------------|:----------:|
+| Minimum Payment Value    | 10.00 USDC |
+| Transaction Fee Rate Min |    N/A     |
+| Transaction Fee Rate Max |   1.4 %    |
+| Minimum Transaction Fee  | 2.50 USDC  |
+| Stake Target Factor      |    N/A     |
+
+
+### Auto Buys (DCA)
+
+| Name                    |   Value    |
+|-------------------------|:----------:|
+| Minimum Buy Amount      | 50.00 USDC |
+| Transaction Fee         |   0.6 %    |
+| Minimum Transaction Fee | 5.00 USDC  |
+| Minimum Period          |   1 Day    |
+| Minimum Slippage        |   0.5 %    |
+| Stake Target Factor     |    N/A     |
+
+
+### Peer-to-Peer (P2P)
+
+| Name                    |   Value   |
+|-------------------------|:---------:|
+| Transaction Fee         | 1.50 USDC |
+| Minimum Period          |   1 Day   |
