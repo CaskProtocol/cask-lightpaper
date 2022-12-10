@@ -16,16 +16,18 @@
 
 ## Polygon Contracts
 
-| contract name           |                                                          Address                                                          |
-|-------------------------|:-------------------------------------------------------------------------------------------------------------------------:|
-| CaskVault               | [0x3b2b4b547dAEEbf3A703288CB43650f0F287b9ff](https://polygonscan.com/address/0x3b2b4b547dAEEbf3A703288CB43650f0F287b9ff)  |
-| CaskSubscriptions       | [0x4A6f232552E0fd76787006Bb688bFBCB931cc3d0](https://polygonscan.com/address/0x4A6f232552E0fd76787006Bb688bFBCB931cc3d0)  |
-| CaskSubscriptionPlans   | [0x78B5882b81AF02ebb0803eAFb4A4bf27fe35470e](https://polygonscan.com/address/0x78B5882b81AF02ebb0803eAFb4A4bf27fe35470e)  |
-| CaskSubscriptionManager | [0xfA07af9E5835D720b3798a37f716749252F94D71](https://polygonscan.com/address/0xfA07af9E5835D720b3798a37f716749252F94D71)  |
-| CaskDCA                 | [0x733Ec5A72c38f2f3c75E98b28DffC1885aB04AF1](https://polygonscan.com/address/0x733Ec5A72c38f2f3c75E98b28DffC1885aB04AF1)  |
-| CaskDCAManager          | [0xE07c2e264fb6D4dD8215feD6f3a78d70D1BF4CE2](https://polygonscan.com/address/0xE07c2e264fb6D4dD8215feD6f3a78d70D1BF4CE2)  |
-| CaskP2P                 | [0xB80376507Dd5d561AD3A6aB452FE17e782220501](https://polygonscan.com/address/0xB80376507Dd5d561AD3A6aB452FE17e782220501)  |
-| CaskP2PManager          | [0xfA7fe9DFFd6fEd7292fdCce2677d88e1b9a9c295](https://polygonscan.com/address/0xfA7fe9DFFd6fEd7292fdCce2677d88e1b9a9c295)  |
+| contract name             |                                                          Address                                                          |
+|---------------------------|:-------------------------------------------------------------------------------------------------------------------------:|
+| CaskVault                 | [0x3b2b4b547dAEEbf3A703288CB43650f0F287b9ff](https://polygonscan.com/address/0x3b2b4b547dAEEbf3A703288CB43650f0F287b9ff)  |
+| CaskSubscriptions         | [0x4A6f232552E0fd76787006Bb688bFBCB931cc3d0](https://polygonscan.com/address/0x4A6f232552E0fd76787006Bb688bFBCB931cc3d0)  |
+| CaskSubscriptionPlans     | [0x78B5882b81AF02ebb0803eAFb4A4bf27fe35470e](https://polygonscan.com/address/0x78B5882b81AF02ebb0803eAFb4A4bf27fe35470e)  |
+| CaskSubscriptionManager   | [0xfA07af9E5835D720b3798a37f716749252F94D71](https://polygonscan.com/address/0xfA07af9E5835D720b3798a37f716749252F94D71)  |
+| CaskDCA                   | [0x733Ec5A72c38f2f3c75E98b28DffC1885aB04AF1](https://polygonscan.com/address/0x733Ec5A72c38f2f3c75E98b28DffC1885aB04AF1)  |
+| CaskDCAManager            | [0xE07c2e264fb6D4dD8215feD6f3a78d70D1BF4CE2](https://polygonscan.com/address/0xE07c2e264fb6D4dD8215feD6f3a78d70D1BF4CE2)  |
+| CaskP2P                   | [0xB80376507Dd5d561AD3A6aB452FE17e782220501](https://polygonscan.com/address/0xB80376507Dd5d561AD3A6aB452FE17e782220501)  |
+| CaskP2PManager            | [0xfA7fe9DFFd6fEd7292fdCce2677d88e1b9a9c295](https://polygonscan.com/address/0xfA7fe9DFFd6fEd7292fdCce2677d88e1b9a9c295)  |
+| CaskChainlinkTopup        | [0xD621F2C0374d32771d7Cfbec348a63F26f9d7c4F](https://polygonscan.com/address/0xD621F2C0374d32771d7Cfbec348a63F26f9d7c4F)  |
+| CaskChainlinkTopupManager | [0x8839A1941A9cB2deCfC05C3191c598Bf2aC5Be0C](https://polygonscan.com/address/0x8839A1941A9cB2deCfC05C3191c598Bf2aC5Be0C)  |
 
 
 ## Polygon Supported Stablecoins
@@ -71,22 +73,31 @@ For details on each fee, see [Protocol Fees](/protocol-fees.md).
 | Transaction Fee         | 0.10 USDC |
 | Minimum Period          |   1 Day   |
 
+### Chainlink Topup
+
+| Name                    |   Value    |
+|-------------------------|:----------:|
+| Minimum Buy Amount      | 10.00 USDC |
+| Transaction Fee         |   0.9 %    |
+| Minimum Transaction Fee | 0.50 USDC  |
 
 
 # Avalanche
 
 ## Avalanche Contracts
 
-| contract name           |                                                        Address                                                        |
-|-------------------------|:---------------------------------------------------------------------------------------------------------------------:|
-| CaskVault               | [0x3b2b4b547dAEEbf3A703288CB43650f0F287b9ff](https://snowtrace.io/address/0x3b2b4b547dAEEbf3A703288CB43650f0F287b9ff) |
-| CaskSubscriptions       | [0x4A6f232552E0fd76787006Bb688bFBCB931cc3d0](https://snowtrace.io/address/0x4A6f232552E0fd76787006Bb688bFBCB931cc3d0) |
-| CaskSubscriptionPlans   | [0x78B5882b81AF02ebb0803eAFb4A4bf27fe35470e](https://snowtrace.io/address/0x78B5882b81AF02ebb0803eAFb4A4bf27fe35470e) |
-| CaskSubscriptionManager | [0xfA07af9E5835D720b3798a37f716749252F94D71](https://snowtrace.io/address/0xfA07af9E5835D720b3798a37f716749252F94D71) |
-| CaskDCA                 | [0xb8A52a086262E1d6c7494bDCb824f884f41FC5f8](https://snowtrace.io/address/0xb8A52a086262E1d6c7494bDCb824f884f41FC5f8) |
-| CaskDCAManager          | [0x4898D1e6d9761B4215901817FBe9F12750238882](https://snowtrace.io/address/0x4898D1e6d9761B4215901817FBe9F12750238882) |
-| CaskP2P                 | [0xe2d24801A9b790f1168cCB7caBdAdC6A071912F3](https://snowtrace.io/address/0xe2d24801A9b790f1168cCB7caBdAdC6A071912F3) |
-| CaskP2PManager          | [0xCFC9B780609A80BDF65b4676C3227d2c4c862003](https://snowtrace.io/address/0xCFC9B780609A80BDF65b4676C3227d2c4c862003) |
+| contract name             |                                                        Address                                                        |
+|---------------------------|:---------------------------------------------------------------------------------------------------------------------:|
+| CaskVault                 | [0x3b2b4b547dAEEbf3A703288CB43650f0F287b9ff](https://snowtrace.io/address/0x3b2b4b547dAEEbf3A703288CB43650f0F287b9ff) |
+| CaskSubscriptions         | [0x4A6f232552E0fd76787006Bb688bFBCB931cc3d0](https://snowtrace.io/address/0x4A6f232552E0fd76787006Bb688bFBCB931cc3d0) |
+| CaskSubscriptionPlans     | [0x78B5882b81AF02ebb0803eAFb4A4bf27fe35470e](https://snowtrace.io/address/0x78B5882b81AF02ebb0803eAFb4A4bf27fe35470e) |
+| CaskSubscriptionManager   | [0xfA07af9E5835D720b3798a37f716749252F94D71](https://snowtrace.io/address/0xfA07af9E5835D720b3798a37f716749252F94D71) |
+| CaskDCA                   | [0xb8A52a086262E1d6c7494bDCb824f884f41FC5f8](https://snowtrace.io/address/0xb8A52a086262E1d6c7494bDCb824f884f41FC5f8) |
+| CaskDCAManager            | [0x4898D1e6d9761B4215901817FBe9F12750238882](https://snowtrace.io/address/0x4898D1e6d9761B4215901817FBe9F12750238882) |
+| CaskP2P                   | [0xe2d24801A9b790f1168cCB7caBdAdC6A071912F3](https://snowtrace.io/address/0xe2d24801A9b790f1168cCB7caBdAdC6A071912F3) |
+| CaskP2PManager            | [0xCFC9B780609A80BDF65b4676C3227d2c4c862003](https://snowtrace.io/address/0xCFC9B780609A80BDF65b4676C3227d2c4c862003) |
+| CaskChainlinkTopup        | [0xC787791a0d0122b9cCCD2cA9d9FEBcAC3831f0fc](https://snowtrace.io/address/0xC787791a0d0122b9cCCD2cA9d9FEBcAC3831f0fc) |
+| CaskChainlinkTopupManager | [0xD621F2C0374d32771d7Cfbec348a63F26f9d7c4F](https://snowtrace.io/address/0xD621F2C0374d32771d7Cfbec348a63F26f9d7c4F) |
 
 ## Avalanche Supported Stablecoins
 
@@ -133,6 +144,15 @@ For details on each fee, see [Protocol Fees](/protocol-fees.md).
 |-------------------------|:-----------:|
 | Transaction Fee         | 0.25 USDC.e |
 | Minimum Period          |    1 Day    |
+
+
+### Chainlink Topop
+
+| Name                    |    Value     |
+|-------------------------|:------------:|
+| Minimum Buy Amount      | 20.00 USDC.e |
+| Transaction Fee         |    0.9 %     |
+| Minimum Transaction Fee | 1.00 USDC.e  |
 
 
 # Fantom
@@ -432,16 +452,18 @@ For details on each fee, see [Protocol Fees](/protocol-fees.md).
 
 ## Arbitrum Contracts
 
-| contract name           |                                                         Address                                                         |
-|-------------------------|:-----------------------------------------------------------------------------------------------------------------------:|
-| CaskVault               | [0x20151fF7fDd720b85063D02081aa5B7876aDff7B](https://arbiscan.io/address/0x20151fF7fDd720b85063D02081aa5B7876aDff7B) |
-| CaskSubscriptions       | [0xF76BF31f0b56BD6f72E1aFeB83a51F191ec2291B](https://arbiscan.io/address/0xF76BF31f0b56BD6f72E1aFeB83a51F191ec2291B) |
-| CaskSubscriptionPlans   | [0xfA07af9E5835D720b3798a37f716749252F94D71](https://arbiscan.io/address/0xfA07af9E5835D720b3798a37f716749252F94D71) |
-| CaskSubscriptionManager | [0x7DaF9a1744Df00d0473A9A920B6A4Ea33B665360](https://arbiscan.io/address/0x7DaF9a1744Df00d0473A9A920B6A4Ea33B665360) |
-| CaskDCA                 | [0xf89418E3A57189692ADe9A25792fD986fb99C5Ca](https://arbiscan.io/address/0xf89418E3A57189692ADe9A25792fD986fb99C5Ca) |
-| CaskDCAManager          | [0x4C17e4F40262108F06375d727f1353e1D592B1Bf](https://arbiscan.io/address/0x4C17e4F40262108F06375d727f1353e1D592B1Bf) |
-| CaskP2P                 | [0x775Df9836945B0E95eD5F6A3269Bf22F6b426e85](https://arbiscan.io/address/0x775Df9836945B0E95eD5F6A3269Bf22F6b426e85) |
-| CaskP2PManager          | [0x1A4620123cfD10c73D9Cdd65879c1Fb6312ef654](https://arbiscan.io/address/0x1A4620123cfD10c73D9Cdd65879c1Fb6312ef654) |
+| contract name             |                                                         Address                                                         |
+|---------------------------|:-----------------------------------------------------------------------------------------------------------------------:|
+| CaskVault                 | [0x20151fF7fDd720b85063D02081aa5B7876aDff7B](https://arbiscan.io/address/0x20151fF7fDd720b85063D02081aa5B7876aDff7B) |
+| CaskSubscriptions         | [0xF76BF31f0b56BD6f72E1aFeB83a51F191ec2291B](https://arbiscan.io/address/0xF76BF31f0b56BD6f72E1aFeB83a51F191ec2291B) |
+| CaskSubscriptionPlans     | [0xfA07af9E5835D720b3798a37f716749252F94D71](https://arbiscan.io/address/0xfA07af9E5835D720b3798a37f716749252F94D71) |
+| CaskSubscriptionManager   | [0x7DaF9a1744Df00d0473A9A920B6A4Ea33B665360](https://arbiscan.io/address/0x7DaF9a1744Df00d0473A9A920B6A4Ea33B665360) |
+| CaskDCA                   | [0xf89418E3A57189692ADe9A25792fD986fb99C5Ca](https://arbiscan.io/address/0xf89418E3A57189692ADe9A25792fD986fb99C5Ca) |
+| CaskDCAManager            | [0x4C17e4F40262108F06375d727f1353e1D592B1Bf](https://arbiscan.io/address/0x4C17e4F40262108F06375d727f1353e1D592B1Bf) |
+| CaskP2P                   | [0x775Df9836945B0E95eD5F6A3269Bf22F6b426e85](https://arbiscan.io/address/0x775Df9836945B0E95eD5F6A3269Bf22F6b426e85) |
+| CaskP2PManager            | [0x1A4620123cfD10c73D9Cdd65879c1Fb6312ef654](https://arbiscan.io/address/0x1A4620123cfD10c73D9Cdd65879c1Fb6312ef654) |
+| CaskChainlinkTopup        | [0xe465A32D2826dc5A42FDc75624a18Ee35A25a131](https://arbiscan.io/address/0xe465A32D2826dc5A42FDc75624a18Ee35A25a131) |
+| CaskChainlinkTopupManager | [0x7D872c19C5A3839313c76F47CD595Ac843068aCC](https://arbiscan.io/address/0x7D872c19C5A3839313c76F47CD595Ac843068aCC) |
 
 ## Arbitrum Supported Stablecoins
 
@@ -487,20 +509,31 @@ For details on each fee, see [Protocol Fees](/protocol-fees.md).
 | Transaction Fee         | 0.25 USDC |
 | Minimum Period          |   1 Day   |
 
+### Chainlink Topup
+
+| Name                    |   Value    |
+|-------------------------|:----------:|
+| Minimum Buy Amount      | 20.00 USDC |
+| Transaction Fee         |   0.9 %    |
+| Minimum Transaction Fee | 1.00 USDC  |
+
+
 # Optimism
 
 ## Optimism Contracts
 
-| contract name           |                                                             Address                                                              |
-|-------------------------|:--------------------------------------------------------------------------------------------------------------------------------:|
-| CaskVault               | [0x3b2b4b547dAEEbf3A703288CB43650f0F287b9ff](https://optimistic.etherscan.io/address/0x3b2b4b547dAEEbf3A703288CB43650f0F287b9ff) |
-| CaskSubscriptions       | [0xD054F8866fc45c4387d56D2340dCA08d83E14A5e](https://optimistic.etherscan.io/address/0xD054F8866fc45c4387d56D2340dCA08d83E14A5e) |
-| CaskSubscriptionPlans   | [0xD252A4C836C75063867f0193325b328CCe6B7306](https://optimistic.etherscan.io/address/0xD252A4C836C75063867f0193325b328CCe6B7306) |
-| CaskSubscriptionManager | [0x331979A83644574E56035E4b43d3ca68Ce793918](https://optimistic.etherscan.io/address/0x331979A83644574E56035E4b43d3ca68Ce793918) |
-| CaskDCA                 | [0x96d59127cCD1c0e3749E733Ee04F0DfbD2f808c8](https://optimistic.etherscan.io/address/0x96d59127cCD1c0e3749E733Ee04F0DfbD2f808c8) |
-| CaskDCAManager          | [0x83aA6a992Ff3ef3766679Cc90E8C60a04afcC171](https://optimistic.etherscan.io/address/0x83aA6a992Ff3ef3766679Cc90E8C60a04afcC171) |
-| CaskP2P                 | [0xccB54bF4171bc8C11e78ca40f3a3bd3B721EF361](https://optimistic.etherscan.io/address/0xccB54bF4171bc8C11e78ca40f3a3bd3B721EF361) |
-| CaskP2PManager          | [0xb8A52a086262E1d6c7494bDCb824f884f41FC5f8](https://optimistic.etherscan.io/address/0xb8A52a086262E1d6c7494bDCb824f884f41FC5f8) |
+| contract name             |                                                             Address                                                              |
+|---------------------------|:--------------------------------------------------------------------------------------------------------------------------------:|
+| CaskVault                 | [0x3b2b4b547dAEEbf3A703288CB43650f0F287b9ff](https://optimistic.etherscan.io/address/0x3b2b4b547dAEEbf3A703288CB43650f0F287b9ff) |
+| CaskSubscriptions         | [0xD054F8866fc45c4387d56D2340dCA08d83E14A5e](https://optimistic.etherscan.io/address/0xD054F8866fc45c4387d56D2340dCA08d83E14A5e) |
+| CaskSubscriptionPlans     | [0xD252A4C836C75063867f0193325b328CCe6B7306](https://optimistic.etherscan.io/address/0xD252A4C836C75063867f0193325b328CCe6B7306) |
+| CaskSubscriptionManager   | [0x331979A83644574E56035E4b43d3ca68Ce793918](https://optimistic.etherscan.io/address/0x331979A83644574E56035E4b43d3ca68Ce793918) |
+| CaskDCA                   | [0x96d59127cCD1c0e3749E733Ee04F0DfbD2f808c8](https://optimistic.etherscan.io/address/0x96d59127cCD1c0e3749E733Ee04F0DfbD2f808c8) |
+| CaskDCAManager            | [0x83aA6a992Ff3ef3766679Cc90E8C60a04afcC171](https://optimistic.etherscan.io/address/0x83aA6a992Ff3ef3766679Cc90E8C60a04afcC171) |
+| CaskP2P                   | [0xccB54bF4171bc8C11e78ca40f3a3bd3B721EF361](https://optimistic.etherscan.io/address/0xccB54bF4171bc8C11e78ca40f3a3bd3B721EF361) |
+| CaskP2PManager            | [0xb8A52a086262E1d6c7494bDCb824f884f41FC5f8](https://optimistic.etherscan.io/address/0xb8A52a086262E1d6c7494bDCb824f884f41FC5f8) |
+| CaskChainlinkTopup        | [0x6deE81A058c48013686520Ac2f5E445dde645062](https://optimistic.etherscan.io/address/0x6deE81A058c48013686520Ac2f5E445dde645062) |
+| CaskChainlinkTopupManager | [0xFdbF3Be079AfbD27aE89378839B48Ad7BD18Bbe4](https://optimistic.etherscan.io/address/0xFdbF3Be079AfbD27aE89378839B48Ad7BD18Bbe4) |
 
 ## Optimism Supported Stablecoins
 
@@ -546,21 +579,31 @@ For details on each fee, see [Protocol Fees](/protocol-fees.md).
 | Transaction Fee         | 0.25 USDC |
 | Minimum Period          |   1 Day   |
 
+### Chainlink Topup
+
+| Name                    |   Value    |
+|-------------------------|:----------:|
+| Minimum Buy Amount      | 20.00 USDC |
+| Transaction Fee         |   0.9 %    |
+| Minimum Transaction Fee | 1.00 USDC  |
+
 
 # BNB Chain
 
 ## BNB Chain Contracts
 
-| contract name           |                                                       Address                                                        |
-|-------------------------|:--------------------------------------------------------------------------------------------------------------------:|
-| CaskVault               | [0x3b2b4b547dAEEbf3A703288CB43650f0F287b9ff](https://bscscan.com/address/0x3b2b4b547dAEEbf3A703288CB43650f0F287b9ff) |
-| CaskSubscriptions       | [0xD054F8866fc45c4387d56D2340dCA08d83E14A5e](https://bscscan.com/address/0xD054F8866fc45c4387d56D2340dCA08d83E14A5e)  |
-| CaskSubscriptionPlans   | [0xD252A4C836C75063867f0193325b328CCe6B7306](https://bscscan.com/address/0xD252A4C836C75063867f0193325b328CCe6B7306)  |
-| CaskSubscriptionManager | [0x331979A83644574E56035E4b43d3ca68Ce793918](https://bscscan.com/address/0x331979A83644574E56035E4b43d3ca68Ce793918)  |
-| CaskDCA                 | [0x96d59127cCD1c0e3749E733Ee04F0DfbD2f808c8](https://bscscan.com/address/0x96d59127cCD1c0e3749E733Ee04F0DfbD2f808c8)  |
-| CaskDCAManager          | [0x83aA6a992Ff3ef3766679Cc90E8C60a04afcC171](https://bscscan.com/address/0x83aA6a992Ff3ef3766679Cc90E8C60a04afcC171)  |
-| CaskP2P                 | [0x775Df9836945B0E95eD5F6A3269Bf22F6b426e85](https://bscscan.com/address/0x775Df9836945B0E95eD5F6A3269Bf22F6b426e85)  |
-| CaskP2PManager          | [0x1A4620123cfD10c73D9Cdd65879c1Fb6312ef654](https://bscscan.com/address/0x1A4620123cfD10c73D9Cdd65879c1Fb6312ef654)  |
+| contract name             |                                                       Address                                                        |
+|---------------------------|:--------------------------------------------------------------------------------------------------------------------:|
+| CaskVault                 | [0x3b2b4b547dAEEbf3A703288CB43650f0F287b9ff](https://bscscan.com/address/0x3b2b4b547dAEEbf3A703288CB43650f0F287b9ff) |
+| CaskSubscriptions         | [0xD054F8866fc45c4387d56D2340dCA08d83E14A5e](https://bscscan.com/address/0xD054F8866fc45c4387d56D2340dCA08d83E14A5e)  |
+| CaskSubscriptionPlans     | [0xD252A4C836C75063867f0193325b328CCe6B7306](https://bscscan.com/address/0xD252A4C836C75063867f0193325b328CCe6B7306)  |
+| CaskSubscriptionManager   | [0x331979A83644574E56035E4b43d3ca68Ce793918](https://bscscan.com/address/0x331979A83644574E56035E4b43d3ca68Ce793918)  |
+| CaskDCA                   | [0x96d59127cCD1c0e3749E733Ee04F0DfbD2f808c8](https://bscscan.com/address/0x96d59127cCD1c0e3749E733Ee04F0DfbD2f808c8)  |
+| CaskDCAManager            | [0x83aA6a992Ff3ef3766679Cc90E8C60a04afcC171](https://bscscan.com/address/0x83aA6a992Ff3ef3766679Cc90E8C60a04afcC171)  |
+| CaskP2P                   | [0x775Df9836945B0E95eD5F6A3269Bf22F6b426e85](https://bscscan.com/address/0x775Df9836945B0E95eD5F6A3269Bf22F6b426e85)  |
+| CaskP2PManager            | [0x1A4620123cfD10c73D9Cdd65879c1Fb6312ef654](https://bscscan.com/address/0x1A4620123cfD10c73D9Cdd65879c1Fb6312ef654)  |
+| CaskChainlinkTopup        | [0x28418B0AB2C00142a865971dcC6a4b1154DaD19E](https://bscscan.com/address/0x28418B0AB2C00142a865971dcC6a4b1154DaD19E)  |
+| CaskChainlinkTopupManager | [0x781a5958954a10066feB7B3E94D22D9F8c163e8b](https://bscscan.com/address/0x781a5958954a10066feB7B3E94D22D9F8c163e8b)  |
 
 ## BNB Chain Supported Stablecoins
 
@@ -605,3 +648,11 @@ For details on each fee, see [Protocol Fees](/protocol-fees.md).
 |-------------------------|:---------:|
 | Transaction Fee         | 1.50 USDC |
 | Minimum Period          |   1 Day   |
+
+### ChainlinkTopup
+
+| Name                    |   Value    |
+|-------------------------|:----------:|
+| Minimum Buy Amount      | 50.00 USDC |
+| Transaction Fee         |   0.9 %    |
+| Minimum Transaction Fee | 5.00 USDC  |
