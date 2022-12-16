@@ -483,10 +483,10 @@ For details on each fee, see [Protocol Fees](/protocol-fees.md).
 
 | Name                     |   Value   |
 |--------------------------|:---------:|
-| Minimum Payment Value    | 1.00 USDC |
+| Minimum Payment Value    | 0.50 USDC |
 | Transaction Fee Rate Min |    N/A    |
 | Transaction Fee Rate Max |   1.4 %   |
-| Minimum Transaction Fee  | 0.50 USDC |
+| Minimum Transaction Fee  | 0.10 USDC |
 | Stake Target Factor      |    N/A    |
 
 
@@ -494,9 +494,9 @@ For details on each fee, see [Protocol Fees](/protocol-fees.md).
 
 | Name                    |   Value    |
 |-------------------------|:----------:|
-| Minimum Buy Amount      | 20.00 USDC |
+| Minimum Buy Amount      | 10.00 USDC |
 | Transaction Fee         |   0.6 %    |
-| Minimum Transaction Fee | 1.00 USDC  |
+| Minimum Transaction Fee | 0.50 USDC  |
 | Minimum Period          |   1 Day    |
 | Minimum Slippage        |   0.5 %    |
 | Stake Target Factor     |    N/A     |
@@ -506,16 +506,16 @@ For details on each fee, see [Protocol Fees](/protocol-fees.md).
 
 | Name                    |   Value   |
 |-------------------------|:---------:|
-| Transaction Fee         | 0.25 USDC |
+| Transaction Fee         | 0.10 USDC |
 | Minimum Period          |   1 Day   |
 
 ### Chainlink Topup
 
 | Name                    |   Value    |
 |-------------------------|:----------:|
-| Minimum Buy Amount      | 20.00 USDC |
+| Minimum Buy Amount      | 10.00 USDC |
 | Transaction Fee         |   0.9 %    |
-| Minimum Transaction Fee | 1.00 USDC  |
+| Minimum Transaction Fee | 0.50 USDC  |
 
 
 # Optimism
@@ -553,10 +553,10 @@ For details on each fee, see [Protocol Fees](/protocol-fees.md).
 
 | Name                     |   Value   |
 |--------------------------|:---------:|
-| Minimum Payment Value    | 1.00 USDC |
+| Minimum Payment Value    | 0.50 USDC |
 | Transaction Fee Rate Min |    N/A    |
 | Transaction Fee Rate Max |   1.4 %   |
-| Minimum Transaction Fee  | 0.50 USDC |
+| Minimum Transaction Fee  | 0.10 USDC |
 | Stake Target Factor      |    N/A    |
 
 
@@ -564,9 +564,9 @@ For details on each fee, see [Protocol Fees](/protocol-fees.md).
 
 | Name                    |   Value    |
 |-------------------------|:----------:|
-| Minimum Buy Amount      | 20.00 USDC |
+| Minimum Buy Amount      | 10.00 USDC |
 | Transaction Fee         |   0.6 %    |
-| Minimum Transaction Fee | 1.00 USDC  |
+| Minimum Transaction Fee | 0.50 USDC  |
 | Minimum Period          |   1 Day    |
 | Minimum Slippage        |   0.5 %    |
 | Stake Target Factor     |    N/A     |
@@ -576,16 +576,16 @@ For details on each fee, see [Protocol Fees](/protocol-fees.md).
 
 | Name                    |   Value   |
 |-------------------------|:---------:|
-| Transaction Fee         | 0.25 USDC |
+| Transaction Fee         | 0.10 USDC |
 | Minimum Period          |   1 Day   |
 
 ### Chainlink Topup
 
 | Name                    |   Value    |
 |-------------------------|:----------:|
-| Minimum Buy Amount      | 20.00 USDC |
+| Minimum Buy Amount      | 10.00 USDC |
 | Transaction Fee         |   0.9 %    |
-| Minimum Transaction Fee | 1.00 USDC  |
+| Minimum Transaction Fee | 0.50 USDC  |
 
 
 # BNB Chain
