@@ -17,11 +17,14 @@ Depending on the Chainlink service being used, Cask supports all Chainlink fundi
 
 **Subscription** — Users create a subscription account with Chainlink and pre-funding the balance with LINK tokens. When
 a
-contract requests randomness, the subscriber’s LINK is deducted from their available balance.
+contract requests a chainlink service, such as functions or VRF, the subscriber’s LINK is deducted from their available
+balance. Cask
+monitors the subscription LINK balance, and tops it up as needed.
 
-**Direct Funding** — Contracts can pay with LINK when requesting random values. This method requires developers to
+**Direct Funding** — Contracts can pay with LINK directly when requesting resources. This method requires the calling
+contract/wallet to
 directly
-fund their consumer contracts with enough LINK tokens to pay for the request.
+fund the interaction with LINK. Cask monitors the contract/address LINK balance, and tops it up as needed.
 
 ## Setup
 
