@@ -9,7 +9,7 @@ chains, and deal with
 fluctuations in demand, this process becomes increasingly more complex to manage. Chainlink Topups automate this process
 by automatically buying LINK using stablecoins from either the project's Cask Wallet, or their project vault/treasury
 wallet.
-Projects no longer need to monitor and manage their LINK balance.
+Projects no longer need to monitor and manage their LINK balance. 
 
 ## Funding Types
 
